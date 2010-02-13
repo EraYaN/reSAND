@@ -2,6 +2,27 @@
 #include <d3d10.h> 
 #include <d3dx10.h>
 
+struct Vertex
+{
+	float x, y, z;
+};
+
+struct ColorVertex {
+	float x, y, z;
+	DWORD color;
+};
+struct NormalTexVertex {
+	float x, y, z;
+	float nx, ny, nz;
+	float tu, tv;   // Texture coordinates
+};
+ColorVertex vertexes[];	
+
+
+#define FVF_COLOR(D3DFVF_XYZ | D3DFVF_DIFFUSE)
+
+
+
 #define Error(X) MessageBox(NULL, X, "Error", MB_OK)
 
 class Application
@@ -106,7 +127,12 @@ bool Application::Initialize()
             return false;
         }
     }
-
+	pDevice->CreateVertexBuffer(sizeof(TIPOVERTICE), 
+								D3DUSAGE_WRITEONLY,
+								vf,
+								D3DPOOL_MANAGED,
+								&pvb,
+								NULL);
     ID3D10Texture2D *pBackBuffer;
     if( FAILED( pSwapChain->GetBuffer( 0, __uuidof( ID3D10Texture2D ), 
               (LPVOID*)&pBackBuffer ) ) )
@@ -136,7 +162,8 @@ void Application::Render(float deltaTime)
 {
     pDevice->ClearRenderTargetView( pRenderTargetView, 
                                        D3DXVECTOR4(0, 0, 0, 1) );
-
+	
+}
     pSwapChain->Present( 0, 0 );
 } 
 
