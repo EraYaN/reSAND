@@ -6,8 +6,10 @@ sandManager::sandManager(void)
 {
 SAND_TYPE Water = SAND_TYPE(0, 0, 1.0, 0, 1.0);
 SAND exSAND = SAND(0.5,1,0);
+SAND ex2SAND = SAND(0.6,1,0);
 SAND_TYPES.push_back(Water);
 SANDS.push_back(exSAND);
+SANDS.push_back(ex2SAND);
 
 }
 

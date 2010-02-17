@@ -109,8 +109,9 @@ int APIENTRY _tWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpC
             TranslateMessage(&msg);
             DispatchMessage(&msg);			
 		}	
-		UINT numV = 0;
-		dx.renderScene(sandM.sand2vertex(numV), numV);
+		//UINT numV = 1;
+		//dx.renderScene(sandM.sand2vertex(numV), numV);
+		dx.renderScene();
     }
 
 	return (int) msg.wParam;
