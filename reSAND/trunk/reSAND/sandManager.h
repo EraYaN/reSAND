@@ -36,7 +36,7 @@ struct SAND
 	float X,Y; //Position
 	int type; //index of SAND_TYPES vector
 
-	SAND( int iX, int iY, int iType)
+	SAND( float iX, float iY, float iType)
 	{
 		X = iX;
 		Y = iY;
