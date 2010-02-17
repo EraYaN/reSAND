@@ -1,13 +1,3 @@
-/************************************************************************************
- *	DirectX 10 Manager Class
- *	----------------------------------------
- *	code by : bobby anguelov - banguelov@cs.up.ac.za
- *	downloaded from : takinginitiative.wordpress.org
- *
- *	code is free for use in whatever way you want, however if you work for a game
- *	development firm you are obliged to offer me a job :P (haha i wish)
- ************************************************************************************/
-
 #ifndef DXMANAGER
 #define DXMANAGER
 
