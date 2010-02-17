@@ -164,7 +164,9 @@
     <ClInclude Include="sandManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="effects\basicEffect.fx" />
+    <None Include="effects\basicEffect.fx">
+      <FileType>Document</FileType>
+    </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

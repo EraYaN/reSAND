@@ -33,7 +33,7 @@ float weight; //gewicht 1 = water
 //SAND struct used for every patricle
 struct SAND
 {
-	int X,Y; //Position
+	float X,Y; //Position
 	int type; //index of SAND_TYPES vector
 
 	SAND( int iX, int iY, int iType)
@@ -57,7 +57,7 @@ private:
 public:
 	
 	sandManager(void);
-	vertex*& sand2vertex(UINT numVertices);
+	vertex* sand2vertex(UINT numVertices);
 	~sandManager(void);
 };
 

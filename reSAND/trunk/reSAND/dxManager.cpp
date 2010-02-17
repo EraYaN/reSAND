@@ -252,7 +252,7 @@ void dxManager::renderScene()
 /*******************************************************************
 * Scene Renderer preset vertexes
 *******************************************************************/
-void dxManager::renderScene(vertex* &iV, UINT numVertices)
+void dxManager::renderScene(vertex* iV, UINT numVertices)
 {
 	//clear scene
 	pD3DDevice->ClearRenderTargetView( pRenderTargetView, D3DXCOLOR(0,0,0,0) );
