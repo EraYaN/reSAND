@@ -7,6 +7,8 @@ i prefix stands for "initial"
 #include <windows.h>
 #include <vector>
 
+#include "dxManager.h"
+
 //SAND particle types ex. Water, Stone
 struct SAND_TYPE
 {
@@ -31,10 +33,10 @@ float weight; //gewicht 1 = water
 //SAND struct used for every patricle
 struct SAND
 {
-	int X,Y;
-	SAND_TYPE type;
+	int X,Y; //Position
+	int type; //index of SAND_TYPES vector
 
-	SAND( int iX, int iY, SAND_TYPE iType)
+	SAND( int iX, int iY, int iType)
 	{
 		X = iX;
 		Y = iY;
@@ -46,16 +48,16 @@ struct SAND
 
 };
 
-
-
-
-
 class sandManager
 {
-public:
+private:
 	std::vector<SAND_TYPE> SAND_TYPES;
 	std::vector<SAND> SANDS;
+	
+public:
+	
 	sandManager(void);
+	vertex*& sand2vertex(UINT numVertices);
 	~sandManager(void);
 };
 

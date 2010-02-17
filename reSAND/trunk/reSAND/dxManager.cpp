@@ -249,6 +249,56 @@ void dxManager::renderScene()
 	//flip buffers
 	pSwapChain->Present(0,0);
 }
+/*******************************************************************
+* Scene Renderer preset vertexes
+*******************************************************************/
+void dxManager::renderScene(vertex* &iV, UINT numVertices)
+{
+	//clear scene
+	pD3DDevice->ClearRenderTargetView( pRenderTargetView, D3DXCOLOR(0,0,0,0) );
+
+	//create world matrix
+	static float r;
+	D3DXMATRIX w;
+	D3DXMatrixIdentity(&w);
+	D3DXMatrixRotationY(&w, r);
+	//r += 0.001f;
+
+	//set effect matrices
+	pWorldMatrixEffectVariable->SetMatrix(w);
+	pViewMatrixEffectVariable->SetMatrix(viewMatrix);
+	pProjectionMatrixEffectVariable->SetMatrix(projectionMatrix);
+
+	//fill vertex buffer with vertices
+
+	vertex* v = NULL;	
+
+	//lock vertex buffer for CPU use
+	pVertexBuffer->Map(D3D10_MAP_WRITE_DISCARD, 0, (void**) &v );
+	
+	v=iV;
+
+	pVertexBuffer->Unmap();
+
+	// Set primitive topology 
+	pD3DDevice->IASetPrimitiveTopology( D3D10_PRIMITIVE_TOPOLOGY_POINTLIST );
+
+	//get technique desc
+	D3D10_TECHNIQUE_DESC techDesc;
+	pBasicTechnique->GetDesc( &techDesc );
+	
+	for( UINT p = 0; p < techDesc.Passes; ++p )
+	{
+		//apply technique
+		pBasicTechnique->GetPassByIndex( p )->Apply( 0 );
+				
+		//draw
+		pD3DDevice->Draw( numVertices, 0 );
+	}
+
+	//flip buffers
+	pSwapChain->Present(0,0);
+}
 
 /*******************************************************************
 * Fatal Error Handler
