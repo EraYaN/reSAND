@@ -1,21 +1,4 @@
-#include <windows.h>
-#include <tchar.h>
-#include <stdio.h>
-
-#include "dxManager.h"
-#include "sandManager.h"
-
-/*******************************************************************
-* Global Variables
-*******************************************************************/
-HWND hWnd;					//window handle
-int windowWidth = 1024;	
-int windowHeight = 768;
-
-//directX manager
-dxManager dx;
-sandManager sandM;
-
+#include "reSAND.h"
 /*******************************************************************
 * Main Window Procedure - handles application events
 *******************************************************************/
@@ -109,9 +92,13 @@ int APIENTRY _tWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpC
             TranslateMessage(&msg);
             DispatchMessage(&msg);			
 		}	
-		//UINT numV = 1;
-		//dx.renderScene(sandM.sand2vertex(numV), numV);
+		
+		//dx.renderScene(sandM.sand2vertex(), sandM.getNumberOfSands());
 		dx.renderScene();
+		//dx.renderScene(v, numVertices);
+
+	
+
     }
 
 	return (int) msg.wParam;

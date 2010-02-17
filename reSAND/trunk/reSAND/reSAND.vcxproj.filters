@@ -29,6 +29,9 @@
     <ClInclude Include="dxManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="reSAND.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="sandManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
