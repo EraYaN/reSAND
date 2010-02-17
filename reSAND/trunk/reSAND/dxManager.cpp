@@ -218,20 +218,26 @@ void dxManager::renderScene()
 	pProjectionMatrixEffectVariable->SetMatrix(projectionMatrix);
 
 	//fill vertex buffer with vertices
-	UINT numVertices = 3;	
+	UINT numVertices = 0;	
 	vertex* v = NULL;	
 
 	//lock vertex buffer for CPU use
 	pVertexBuffer->Map(D3D10_MAP_WRITE_DISCARD, 0, (void**) &v );
 	
-	v[0] = vertex( D3DXVECTOR3(-1,-2,0), D3DXVECTOR4(1,0,0,1) );
-	v[1] = vertex( D3DXVECTOR3(0,1,0), D3DXVECTOR4(0,1,0,1) );
-	v[2] = vertex( D3DXVECTOR3(1,-1,0), D3DXVECTOR4(0,0,1,1) );
-
+	for(int i = 0;i<100;++i){
+		v[i] = vertex( D3DXVECTOR3((float)rand()/(float)RAND_MAX*-5,
+(float)rand()/(float)RAND_MAX*5,
+(float)rand()/(float)RAND_MAX*5),
+ D3DXVECTOR4((float)rand()/(float)RAND_MAX
+,(float)rand()/(float)RAND_MAX
+,(float)rand()/(float)RAND_MAX
+,1) );
+numVertices++;
+	}
 	pVertexBuffer->Unmap();
 
 	// Set primitive topology 
-	pD3DDevice->IASetPrimitiveTopology( D3D10_PRIMITIVE_TOPOLOGY_POINTLIST );
+	pD3DDevice->IASetPrimitiveTopology( D3D10_PRIMITIVE_TOPOLOGY_LINESTRIP );
 
 	//get technique desc
 	D3D10_TECHNIQUE_DESC techDesc;
@@ -269,16 +275,14 @@ void dxManager::renderScene(vertex* iV, UINT numVertices)
 	pViewMatrixEffectVariable->SetMatrix(viewMatrix);
 	pProjectionMatrixEffectVariable->SetMatrix(projectionMatrix);
 
-	//fill vertex buffer with vertices
-
 	vertex* v = NULL;	
-
 	//lock vertex buffer for CPU use
 	pVertexBuffer->Map(D3D10_MAP_WRITE_DISCARD, 0, (void**) &v );
 	
 	v=iV;
 
 	pVertexBuffer->Unmap();
+
 
 	// Set primitive topology 
 	pD3DDevice->IASetPrimitiveTopology( D3D10_PRIMITIVE_TOPOLOGY_POINTLIST );
@@ -299,6 +303,7 @@ void dxManager::renderScene(vertex* iV, UINT numVertices)
 	//flip buffers
 	pSwapChain->Present(0,0);
 }
+
 
 /*******************************************************************
 * Fatal Error Handler

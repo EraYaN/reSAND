@@ -6,8 +6,7 @@ i prefix stands for "initial"
 ***************************/
 #include <windows.h>
 #include <vector>
-
-#include "dxManager.h"
+#include "reSAND.h"
 
 //SAND particle types ex. Water, Stone
 struct SAND_TYPE
@@ -36,7 +35,7 @@ struct SAND
 	float X,Y; //Position
 	int type; //index of SAND_TYPES vector
 
-	SAND( float iX, float iY, float iType)
+	SAND( float iX, float iY, int iType)
 	{
 		X = iX;
 		Y = iY;
@@ -57,7 +56,8 @@ private:
 public:
 	
 	sandManager(void);
-	vertex* sand2vertex(UINT numVertices);
+	vertex* sand2vertex(void);
+	UINT getNumberOfSands();
 	~sandManager(void);
 };
 

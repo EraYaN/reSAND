@@ -1,6 +1,6 @@
+#pragma once
 #ifndef DXMANAGER
 #define DXMANAGER
-
 #include <windows.h>
 #include <d3d10.h>
 #include <d3dx10.h>
@@ -35,7 +35,7 @@ private:
 	D3D10_VIEWPORT				viewPort;
 
 	//input layout and vertex buffer
-	ID3D10Buffer*				pVertexBuffer;
+	
 	ID3D10InputLayout*			pVertexLayout;
 
 	//effects and techniques
@@ -55,7 +55,7 @@ private:
 	* Methods
 	********************************************************************/	
 public:
-
+	ID3D10Buffer*				pVertexBuffer;
 	//constructor and destructor
 	dxManager();
 	~dxManager();
@@ -66,6 +66,7 @@ public:
 	//renderScene
 	void renderScene();	
 	void renderScene(vertex* iV, UINT numVertices);	
+
 
 private:
 
