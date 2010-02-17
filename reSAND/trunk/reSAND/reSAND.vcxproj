@@ -151,7 +151,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dxManager.cpp" />
     <ClCompile Include="reSAND.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dxManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
