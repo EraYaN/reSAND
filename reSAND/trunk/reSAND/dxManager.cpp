@@ -210,7 +210,7 @@ void dxManager::renderScene()
 	D3DXMATRIX w;
 	D3DXMatrixIdentity(&w);
 	D3DXMatrixRotationY(&w, r);
-	r += 0.001f;
+	//r += 0.001f;
 
 	//set effect matrices
 	pWorldMatrixEffectVariable->SetMatrix(w);
@@ -224,14 +224,14 @@ void dxManager::renderScene()
 	//lock vertex buffer for CPU use
 	pVertexBuffer->Map(D3D10_MAP_WRITE_DISCARD, 0, (void**) &v );
 	
-	v[0] = vertex( D3DXVECTOR3(-1,-1,0), D3DXVECTOR4(1,0,0,1) );
+	v[0] = vertex( D3DXVECTOR3(-1,-2,0), D3DXVECTOR4(1,0,0,1) );
 	v[1] = vertex( D3DXVECTOR3(0,1,0), D3DXVECTOR4(0,1,0,1) );
 	v[2] = vertex( D3DXVECTOR3(1,-1,0), D3DXVECTOR4(0,0,1,1) );
 
 	pVertexBuffer->Unmap();
 
 	// Set primitive topology 
-	pD3DDevice->IASetPrimitiveTopology( D3D10_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP );
+	pD3DDevice->IASetPrimitiveTopology( D3D10_PRIMITIVE_TOPOLOGY_POINTLIST );
 
 	//get technique desc
 	D3D10_TECHNIQUE_DESC techDesc;

@@ -1,4 +1,4 @@
-﻿Build started 13-2-2010 12:34:03.
+﻿Build started 17-2-2010 17:03:54.
 Environment at start of build:
 MSBuildExtensionsPath = C:\Program Files (x86)\MSBuild
 MSBuildExtensionsPath32 = C:\Program Files (x86)\MSBuild
@@ -51,8 +51,8 @@ windir = C:\Windows
 XSI_PLUGINS = c:\program files (x86)\steam\steamapps\_erayan_\garrysmod\garrysmod\..\sdktools\xsi\5.1\valvesource
 XSI_VERSION = 5.1
 
-00:00:00.000     1>Project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj" on node 44 (rebuild target(s)).
-12:34:03.625     1>Initial Properties:
+00:00:00.000     1>Project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj" on node 41 (rebuild target(s)).
+17:03:54.009     1>Initial Properties:
                    _AfterCompileWinFXInternalDependsOn = 
                            PrepareResourcesForSatelliteAssemblies;
                            MergeLocalizationDirectives;
@@ -479,7 +479,7 @@ XSI_VERSION = 5.1
                                GenerateSatelliteAssemblies
                            
                    CurrentSolutionConfigurationContents = <SolutionConfiguration>
-                   <ProjectConfiguration Project="{c03c9c89-ed16-4d6c-b9cc-ca50ac41799b}" AbsolutePath="C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj">Release|X64</ProjectConfiguration>
+                   <ProjectConfiguration Project="{c03c9c89-ed16-4d6c-b9cc-ca50ac41799b}" AbsolutePath="C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj">Debug|Win32</ProjectConfiguration>
                    </SolutionConfiguration>
                    CustomAfterMicrosoftCommonTargets = C:\Program Files (x86)\MSBuild\4.0\Custom.After.Microsoft.Common.Targets
                    CustomBeforeMicrosoftCommonTargets = C:\Program Files (x86)\MSBuild\4.0\Custom.Before.Microsoft.Common.Targets
@@ -844,7 +844,7 @@ XSI_VERSION = 5.1
                    XSI_PLUGINS = c:\program files (x86)\steam\steamapps\_erayan_\garrysmod\garrysmod\..\sdktools\xsi\5.1\valvesource
                    XSI_VERSION = 5.1
 
-12:34:03.625     1>Building with tools version "4.0".
+17:03:54.009     1>Building with tools version "4.0".
 00:00:00.000     1>Target "_CheckForInvalidConfigurationAndPlatform: (TargetId:298)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
                    Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
@@ -857,20 +857,20 @@ XSI_VERSION = 5.1
                    Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\' != '' and !HasTrailingSlash('C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\')).
                    Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
                    Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('Debug\' != '' and !HasTrailingSlash('Debug\')).
-12:34:03.625     1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "reSAND.vcxproj".: (TargetId:298)
+17:03:54.010     1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "reSAND.vcxproj".: (TargetId:298)
 00:00:00.000     1>Target "_DetermineManagedStateFromCL: (TargetId:299)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.625     1>Done building target "_DetermineManagedStateFromCL" in project "reSAND.vcxproj".: (TargetId:299)
+17:03:54.010     1>Done building target "_DetermineManagedStateFromCL" in project "reSAND.vcxproj".: (TargetId:299)
 00:00:00.000     1>Target "_PrepareForRebuild: (TargetId:300)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.BuildSteps.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.625     1>Done building target "_PrepareForRebuild" in project "reSAND.vcxproj".: (TargetId:300)
+17:03:54.010     1>Done building target "_PrepareForRebuild" in project "reSAND.vcxproj".: (TargetId:300)
 00:00:00.000     1>Target "BeforeRebuild: (TargetId:301)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.625     1>Done building target "BeforeRebuild" in project "reSAND.vcxproj".: (TargetId:301)
+17:03:54.010     1>Done building target "BeforeRebuild" in project "reSAND.vcxproj".: (TargetId:301)
 00:00:00.000     1>Target "_PrepareForClean: (TargetId:302)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.BuildSteps.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Delete" (TaskId:154)
                      Deleting file "Debug\reSAND.lastbuildstate". (TaskId:154)
                    Done executing task "Delete". (TaskId:154)
-12:34:03.625     1>Done building target "_PrepareForClean" in project "reSAND.vcxproj".: (TargetId:302)
+17:03:54.010     1>Done building target "_PrepareForClean" in project "reSAND.vcxproj".: (TargetId:302)
 00:00:00.000     1>Target "BeforeClean: (TargetId:303)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.625     1>Done building target "BeforeClean" in project "reSAND.vcxproj".: (TargetId:303)
+17:03:54.010     1>Done building target "BeforeClean" in project "reSAND.vcxproj".: (TargetId:303)
                    Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
                                        ('$(_AssemblyTimestampBeforeCompile)' == '')) and
                                       Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'exe' != 'library') or
@@ -895,24 +895,24 @@ XSI_VERSION = 5.1
                    Done executing task "MakeDir". (TaskId:161)
                    Task "WriteLinesToFile" (TaskId:162)
                    Done executing task "WriteLinesToFile". (TaskId:162)
-12:34:03.626     1>Done building target "CoreClean" in project "reSAND.vcxproj".: (TargetId:304)
+17:03:54.011     1>Done building target "CoreClean" in project "reSAND.vcxproj".: (TargetId:304)
                    Target "AssignProjectConfiguration" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
 00:00:00.000     1>Target "AssignCppReferenceTargets: (TargetId:305)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.BuildSteps.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.626     1>Done building target "AssignCppReferenceTargets" in project "reSAND.vcxproj".: (TargetId:305)
+17:03:54.011     1>Done building target "AssignCppReferenceTargets" in project "reSAND.vcxproj".: (TargetId:305)
 00:00:00.000     1>Target "_SplitProjectReferencesByFileExistence: (TargetId:306)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
-12:34:03.626     1>Done building target "_SplitProjectReferencesByFileExistence" in project "reSAND.vcxproj".: (TargetId:306)
+17:03:54.011     1>Done building target "_SplitProjectReferencesByFileExistence" in project "reSAND.vcxproj".: (TargetId:306)
 00:00:00.000     1>Target "CleanReferencedProjects: (TargetId:307)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "MSBuild" skipped, due to false condition; ('$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('true' != 'true' and 'true' == 'true' and '' != '').
-12:34:03.626     1>Done building target "CleanReferencedProjects" in project "reSAND.vcxproj".: (TargetId:307)
+17:03:54.011     1>Done building target "CleanReferencedProjects" in project "reSAND.vcxproj".: (TargetId:307)
 00:00:00.000     1>Target "CleanPublishFolder: (TargetId:308)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "RemoveDir" skipped, due to false condition; ('$(PublishDir)'=='$(OutputPath)app.publish\' and Exists('$(PublishDir)')) was evaluated as ('C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\app.publish\'=='C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\app.publish\' and Exists('C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\app.publish\')).
-12:34:03.626     1>Done building target "CleanPublishFolder" in project "reSAND.vcxproj".: (TargetId:308)
+17:03:54.011     1>Done building target "CleanPublishFolder" in project "reSAND.vcxproj".: (TargetId:308)
 00:00:00.000     1>Target "AfterClean: (TargetId:309)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.626     1>Done building target "AfterClean" in project "reSAND.vcxproj".: (TargetId:309)
+17:03:54.012     1>Done building target "AfterClean" in project "reSAND.vcxproj".: (TargetId:309)
                    Target "EntityClean" skipped, due to false condition; ('@(EntityDeploy)' != '') was evaluated as ('' != '').
 00:00:00.000     1>Target "BeforeCppClean: (TargetId:310)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppClean.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.626     1>Done building target "BeforeCppClean" in project "reSAND.vcxproj".: (TargetId:310)
+17:03:54.012     1>Done building target "BeforeCppClean" in project "reSAND.vcxproj".: (TargetId:310)
 00:00:00.000     1>Target "CoreCppClean: (TargetId:311)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppClean.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "MakeDir" (TaskId:163)
                    Done executing task "MakeDir". (TaskId:163)
@@ -921,13 +921,13 @@ XSI_VERSION = 5.1
                    Done executing task "CppClean". (TaskId:164)
                    Task "WriteLinesToFile" (TaskId:165)
                    Done executing task "WriteLinesToFile". (TaskId:165)
-12:34:03.642     1>Done building target "CoreCppClean" in project "reSAND.vcxproj".: (TargetId:311)
+17:03:54.030     1>Done building target "CoreCppClean" in project "reSAND.vcxproj".: (TargetId:311)
 00:00:00.000     1>Target "AfterCppClean: (TargetId:312)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppClean.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.642     1>Done building target "AfterCppClean" in project "reSAND.vcxproj".: (TargetId:312)
+17:03:54.030     1>Done building target "AfterCppClean" in project "reSAND.vcxproj".: (TargetId:312)
 00:00:00.000     1>Target "CppClean: (TargetId:313)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppClean.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.642     1>Done building target "CppClean" in project "reSAND.vcxproj".: (TargetId:313)
+17:03:54.030     1>Done building target "CppClean" in project "reSAND.vcxproj".: (TargetId:313)
 00:00:00.000     1>Target "Clean: (TargetId:314)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.642     1>Done building target "Clean" in project "reSAND.vcxproj".: (TargetId:314)
+17:03:54.030     1>Done building target "Clean" in project "reSAND.vcxproj".: (TargetId:314)
                    Target "_DetermineManagedStateFromCL" skipped. Previously built successfully.
 00:00:00.000     1>Target "_PrepareForBuild: (TargetId:315)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.BuildSteps.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "MakeDir" (TaskId:166)
@@ -939,7 +939,7 @@ XSI_VERSION = 5.1
                    Done executing task "ReadLinesFromFile". (TaskId:168)
                    Task "WriteLinesToFile" (TaskId:169)
                    Done executing task "WriteLinesToFile". (TaskId:169)
-12:34:03.644     1>Done building target "_PrepareForBuild" in project "reSAND.vcxproj".: (TargetId:315)
+17:03:54.032     1>Done building target "_PrepareForBuild" in project "reSAND.vcxproj".: (TargetId:315)
 00:00:00.000     1>Target "SetBuildDefaultEnvironmentVariables: (TargetId:316)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.Cpp.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Using "SetEnv" task from assembly "Microsoft.Build.CppTasks.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "SetEnv" (TaskId:170)
@@ -955,10 +955,10 @@ XSI_VERSION = 5.1
                    Task "SetEnv" (TaskId:173)
                      INCLUDE=C:\Program Files (x86)\Microsoft DirectX SDK (August 2009)\/include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\\include; (TaskId:173)
                    Done executing task "SetEnv". (TaskId:173)
-12:34:03.647     1>Done building target "SetBuildDefaultEnvironmentVariables" in project "reSAND.vcxproj".: (TargetId:316)
+17:03:54.034     1>Done building target "SetBuildDefaultEnvironmentVariables" in project "reSAND.vcxproj".: (TargetId:316)
                    Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '') was evaluated as ('' != '').
 00:00:00.000     1>Target "BeforeResolveReferences: (TargetId:317)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.647     1>Done building target "BeforeResolveReferences" in project "reSAND.vcxproj".: (TargetId:317)
+17:03:54.034     1>Done building target "BeforeResolveReferences" in project "reSAND.vcxproj".: (TargetId:317)
                    Target "AssignProjectConfiguration" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
                    Target "AssignProjectConfiguration" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
                    Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
@@ -968,20 +968,20 @@ XSI_VERSION = 5.1
                    Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' != 'true' and 'true' == 'true' and '' != '').
                    Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '$(BuildingProject)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and 'true' == 'true' and '' != '').
                    Task "Warning" skipped, due to false condition; ('@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceNonexistent)' != '') was evaluated as ('' != '' and '' != '').
-12:34:03.647     1>Done building target "ResolveProjectReferences" in project "reSAND.vcxproj".: (TargetId:318)
+17:03:54.035     1>Done building target "ResolveProjectReferences" in project "reSAND.vcxproj".: (TargetId:318)
                    Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
                    Target "ResolveAssemblyReferences" skipped, due to false condition; ('@(Reference)'!='' or '@(_ResolvedProjectReferencePaths)'!='' or '@(_ExplicitReference)' != '') was evaluated as (''!='' or ''!='' or '' != '').
                    Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
 00:00:00.000     1>Target "AfterResolveReferences: (TargetId:319)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.647     1>Done building target "AfterResolveReferences" in project "reSAND.vcxproj".: (TargetId:319)
+17:03:54.035     1>Done building target "AfterResolveReferences" in project "reSAND.vcxproj".: (TargetId:319)
                    Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
 00:00:00.000     1>Target "ResolveReferences: (TargetId:320)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.647     1>Done building target "ResolveReferences" in project "reSAND.vcxproj".: (TargetId:320)
+17:03:54.035     1>Done building target "ResolveReferences" in project "reSAND.vcxproj".: (TargetId:320)
 00:00:00.000     1>Target "PlatformPrepareForBuild: (TargetId:321)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\Microsoft.Cpp.Win32.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "VCMessage" skipped, due to false condition; (!(exists('$(VCTargetsPath)\Platforms\Win32\PlatformToolsets\$(PlatformToolset)\Microsoft.Cpp.Win32.$(PlatformToolset).targets'))) was evaluated as (!(exists('C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\\Platforms\Win32\PlatformToolsets\v100\Microsoft.Cpp.Win32.v100.targets'))).
-12:34:03.647     1>Done building target "PlatformPrepareForBuild" in project "reSAND.vcxproj".: (TargetId:321)
+17:03:54.035     1>Done building target "PlatformPrepareForBuild" in project "reSAND.vcxproj".: (TargetId:321)
 00:00:00.000     1>Target "GetFrameworkPaths: (TargetId:322)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.NETFramework.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.647     1>Done building target "GetFrameworkPaths" in project "reSAND.vcxproj".: (TargetId:322)
+17:03:54.035     1>Done building target "GetFrameworkPaths" in project "reSAND.vcxproj".: (TargetId:322)
 00:00:00.000     1>Target "PrepareForBuild: (TargetId:323)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCInstallDir)'=='' and '$(UseEnv)' != 'true' and ($(TargetFrameworkVersion)=='v3.5' or $(TargetFrameworkVersion)=='v3.0' or $(TargetFrameworkVersion)=='v2.0' )) was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\'=='' and '' != 'true' and (v4.0=='v3.5' or v4.0=='v3.0' or v4.0=='v2.0' )).
                    Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(VCInstallDir)'=='' and '$(UseEnv)' != 'true' and '$(PlatformToolset)'=='v90') was evaluated as (''!='true' and 'C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\'=='' and '' != 'true' and 'v100'=='v90').
@@ -991,70 +991,70 @@ XSI_VERSION = 5.1
                    Task "VCMessage" skipped, due to false condition; ('$(OutDirTrailingSlashWarning)'=='true') was evaluated as (''=='true').
                    Task "MakeDir" (TaskId:174)
                    Done executing task "MakeDir". (TaskId:174)
-12:34:03.648     1>Done building target "PrepareForBuild" in project "reSAND.vcxproj".: (TargetId:323)
+17:03:54.036     1>Done building target "PrepareForBuild" in project "reSAND.vcxproj".: (TargetId:323)
                    Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
                    Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '') was evaluated as ('' != '').
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "ResolveReferences" skipped. Previously built successfully.
 00:00:00.000     1>Target "BeforeBuildGenerateSources: (TargetId:324)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.BuildSteps.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.648     1>Done building target "BeforeBuildGenerateSources" in project "reSAND.vcxproj".: (TargetId:324)
+17:03:54.036     1>Done building target "BeforeBuildGenerateSources" in project "reSAND.vcxproj".: (TargetId:324)
 00:00:00.000     1>Target "PreBuildEvent: (TargetId:325)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Message" skipped, due to false condition; ('%(PreBuildEvent.Message)' != '' and '%(PreBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
                    Task "Exec" skipped, due to false condition; ('%(PreBuildEvent.Command)' != '') was evaluated as ('' != '').
-12:34:03.648     1>Done building target "PreBuildEvent" in project "reSAND.vcxproj".: (TargetId:325)
+17:03:54.036     1>Done building target "PreBuildEvent" in project "reSAND.vcxproj".: (TargetId:325)
                    Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
 00:00:00.000     1>Target "_GenerateXMLData: (TargetId:326)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.648     1>Done building target "_GenerateXMLData" in project "reSAND.vcxproj".: (TargetId:326)
+17:03:54.036     1>Done building target "_GenerateXMLData" in project "reSAND.vcxproj".: (TargetId:326)
 00:00:00.000     1>Target "_GenerateWebServiceProxy: (TargetId:327)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.648     1>Done building target "_GenerateWebServiceProxy" in project "reSAND.vcxproj".: (TargetId:327)
+17:03:54.036     1>Done building target "_GenerateWebServiceProxy" in project "reSAND.vcxproj".: (TargetId:327)
                    Target "Xsd" skipped, due to false condition; ('@(Xsd)' != '') was evaluated as ('' != '').
 00:00:00.000     1>Target "_Xsd: (TargetId:328)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.648     1>Done building target "_Xsd" in project "reSAND.vcxproj".: (TargetId:328)
+17:03:54.036     1>Done building target "_Xsd" in project "reSAND.vcxproj".: (TargetId:328)
 00:00:00.000     1>Target "MakeDirsForMidl: (TargetId:329)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Makedir" (TaskId:175)
                    Done executing task "Makedir". (TaskId:175)
-12:34:03.648     1>Done building target "MakeDirsForMidl" in project "reSAND.vcxproj".: (TargetId:329)
+17:03:54.036     1>Done building target "MakeDirsForMidl" in project "reSAND.vcxproj".: (TargetId:329)
                    Target "Midl" skipped, due to false condition; ('@(Midl)' != '') was evaluated as ('' != '').
                    Target "CustomBuild" skipped, due to false condition; ('@(CustomBuild)' != '') was evaluated as ('' != '').
 00:00:00.000     1>Target "ComputeMIDLGeneratedCompileInputs: (TargetId:330)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.648     1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "reSAND.vcxproj".: (TargetId:330)
+17:03:54.036     1>Done building target "ComputeMIDLGeneratedCompileInputs" in project "reSAND.vcxproj".: (TargetId:330)
 00:00:00.000     1>Target "AfterMidl: (TargetId:331)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.648     1>Done building target "AfterMidl" in project "reSAND.vcxproj".: (TargetId:331)
+17:03:54.036     1>Done building target "AfterMidl" in project "reSAND.vcxproj".: (TargetId:331)
 00:00:00.000     1>Target "_Midl: (TargetId:332)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.648     1>Done building target "_Midl" in project "reSAND.vcxproj".: (TargetId:332)
+17:03:54.036     1>Done building target "_Midl" in project "reSAND.vcxproj".: (TargetId:332)
 00:00:00.000     1>Target "AfterBuildGenerateSources: (TargetId:333)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.BuildSteps.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.648     1>Done building target "AfterBuildGenerateSources" in project "reSAND.vcxproj".: (TargetId:333)
+17:03:54.036     1>Done building target "AfterBuildGenerateSources" in project "reSAND.vcxproj".: (TargetId:333)
 00:00:00.000     1>Target "AfterBuildGenerateSourcesEvent: (TargetId:334)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.648     1>Done building target "AfterBuildGenerateSourcesEvent" in project "reSAND.vcxproj".: (TargetId:334)
+17:03:54.036     1>Done building target "AfterBuildGenerateSourcesEvent" in project "reSAND.vcxproj".: (TargetId:334)
 00:00:00.000     1>Target "BuildGenerateSources: (TargetId:335)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.BuildSteps.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.648     1>Done building target "BuildGenerateSources" in project "reSAND.vcxproj".: (TargetId:335)
+17:03:54.036     1>Done building target "BuildGenerateSources" in project "reSAND.vcxproj".: (TargetId:335)
                    Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
                    Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '') was evaluated as ('' != '').
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "ResolveReferences" skipped. Previously built successfully.
 00:00:00.000     1>Target "BeforeClCompile: (TargetId:336)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.648     1>Done building target "BeforeClCompile" in project "reSAND.vcxproj".: (TargetId:336)
+17:03:54.036     1>Done building target "BeforeClCompile" in project "reSAND.vcxproj".: (TargetId:336)
                    Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
 00:00:00.000     1>Target "ComputeCLInputPDBName: (TargetId:337)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.648     1>Done building target "ComputeCLInputPDBName" in project "reSAND.vcxproj".: (TargetId:337)
+17:03:54.036     1>Done building target "ComputeCLInputPDBName" in project "reSAND.vcxproj".: (TargetId:337)
                    Target "ComputeReferenceCLInput" skipped, due to false condition; (('@(ProjectReference)'!='' or '@(Reference)'!='')) was evaluated as ((''!='' or ''!='')).
 00:00:00.000     1>Target "MakeDirsForCl: (TargetId:338)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "MakeDir" (TaskId:176)
                    Done executing task "MakeDir". (TaskId:176)
-12:34:03.649     1>Done building target "MakeDirsForCl" in project "reSAND.vcxproj".: (TargetId:338)
+17:03:54.037     1>Done building target "MakeDirsForCl" in project "reSAND.vcxproj".: (TargetId:338)
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
                    Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '') was evaluated as ('' != '').
 00:00:00.000     1>Target "_SelectedFiles: (TargetId:339)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.649     1>Done building target "_SelectedFiles" in project "reSAND.vcxproj".: (TargetId:339)
+17:03:54.037     1>Done building target "_SelectedFiles" in project "reSAND.vcxproj".: (TargetId:339)
                    Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
                    Target "ComputeCLInputPDBName" skipped. Previously built successfully.
                    Target "ComputeReferenceCLInput" skipped, due to false condition; (('@(ProjectReference)'!='' or '@(Reference)'!='')) was evaluated as ((''!='' or ''!='')).
                    Target "_SelectedFiles" skipped. Previously built successfully.
 00:00:00.000     1>Target "SelectCustomBuild: (TargetId:340)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.649     1>Done building target "SelectCustomBuild" in project "reSAND.vcxproj".: (TargetId:340)
+17:03:54.037     1>Done building target "SelectCustomBuild" in project "reSAND.vcxproj".: (TargetId:340)
 00:00:00.000     1>Target "SelectClCompile: (TargetId:341)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:03.649     1>Done building target "SelectClCompile" in project "reSAND.vcxproj".: (TargetId:341)
+17:03:54.037     1>Done building target "SelectClCompile" in project "reSAND.vcxproj".: (TargetId:341)
                    Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
 00:00:00.000     1>Target "ClCompile: (TargetId:342)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\Microsoft.Cpp.Win32.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Delete" (TaskId:177)
@@ -1062,23 +1062,26 @@ XSI_VERSION = 5.1
                    Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true') was evaluated as ('' == 'Create' and ''!='true').
                    Using "CL" task from assembly "Microsoft.Build.CppTasks.Win32, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "CL" (TaskId:178)
-                     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt reSAND.cpp (TaskId:178)
+                     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dxManager.cpp reSAND.cpp sandManager.cpp (TaskId:178)
                      Tracking command: (TaskId:178)
-                     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\Tracker.exe /i "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\Debug" /r "C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\RESAND.CPP" /b MSBuildConsole_CancelEvent097c3779e7984d1ba801c4f85fabc77a  /c "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt reSAND.cpp (TaskId:178)
+                     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\Tracker.exe /i "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\Debug" /r "C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DXMANAGER.CPP|C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\RESAND.CPP|C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\SANDMANAGER.CPP" /b MSBuildConsole_CancelEventc6a82ecdfe094307b285a19848fb505d  /c "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dxManager.cpp reSAND.cpp sandManager.cpp (TaskId:178)
+                     sandManager.cpp (TaskId:178)
                      reSAND.cpp (TaskId:178)
+                     dxManager.cpp (TaskId:178)
+                     Generating Code... (TaskId:178)
                    Done executing task "CL". (TaskId:178)
-12:34:04.479     1>Done building target "ClCompile" in project "reSAND.vcxproj".: (TargetId:342)
+17:03:56.775     1>Done building target "ClCompile" in project "reSAND.vcxproj".: (TargetId:342)
 00:00:00.000     1>Target "AfterClCompile: (TargetId:343)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.479     1>Done building target "AfterClCompile" in project "reSAND.vcxproj".: (TargetId:343)
+17:03:56.775     1>Done building target "AfterClCompile" in project "reSAND.vcxproj".: (TargetId:343)
 00:00:00.000     1>Target "_ClCompile: (TargetId:344)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.479     1>Done building target "_ClCompile" in project "reSAND.vcxproj".: (TargetId:344)
+17:03:56.775     1>Done building target "_ClCompile" in project "reSAND.vcxproj".: (TargetId:344)
                    Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
 00:00:00.000     1>Target "BeforeResourceCompile: (TargetId:345)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.479     1>Done building target "BeforeResourceCompile" in project "reSAND.vcxproj".: (TargetId:345)
+17:03:56.775     1>Done building target "BeforeResourceCompile" in project "reSAND.vcxproj".: (TargetId:345)
 00:00:00.000     1>Target "MakeDirsForResourceCompile: (TargetId:346)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "MakeDir" (TaskId:179)
                    Done executing task "MakeDir". (TaskId:179)
-12:34:04.479     1>Done building target "MakeDirsForResourceCompile" in project "reSAND.vcxproj".: (TargetId:346)
+17:03:56.775     1>Done building target "MakeDirsForResourceCompile" in project "reSAND.vcxproj".: (TargetId:346)
                    Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
 00:00:00.000     1>Target "ManifestResourceCompile: (TargetId:347)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "WriteLinesToFile" (TaskId:180)
@@ -1090,44 +1093,44 @@ XSI_VERSION = 5.1
                    Task "RC" (TaskId:182)
                      C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\reSAND.exe.embed.manifest.res" Debug\reSAND_manifest.rc  (TaskId:182)
                      Tracking command: (TaskId:182)
-                     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\Tracker.exe /i "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\Debug" /r "C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND_MANIFEST.RC" /b MSBuildConsole_CancelEventdfddd80497ed400dac18a4e49c163ea3  /c "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe"  /nologo /fo"Debug\reSAND.exe.embed.manifest.res" Debug\reSAND_manifest.rc  (TaskId:182)
+                     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\Tracker.exe /i "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\Debug" /r "C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND_MANIFEST.RC" /b MSBuildConsole_CancelEvent26c9cc67ff1a4eb8a2528b271cea204d  /c "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe"  /nologo /fo"Debug\reSAND.exe.embed.manifest.res" Debug\reSAND_manifest.rc  (TaskId:182)
                    Done executing task "RC". (TaskId:182)
-12:34:04.510     1>Done building target "ManifestResourceCompile" in project "reSAND.vcxproj".: (TargetId:347)
+17:03:57.140     1>Done building target "ManifestResourceCompile" in project "reSAND.vcxproj".: (TargetId:347)
 00:00:00.000     1>Target "AfterResourceCompile: (TargetId:348)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.510     1>Done building target "AfterResourceCompile" in project "reSAND.vcxproj".: (TargetId:348)
+17:03:57.140     1>Done building target "AfterResourceCompile" in project "reSAND.vcxproj".: (TargetId:348)
 00:00:00.000     1>Target "_ResourceCompile: (TargetId:349)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.510     1>Done building target "_ResourceCompile" in project "reSAND.vcxproj".: (TargetId:349)
+17:03:57.140     1>Done building target "_ResourceCompile" in project "reSAND.vcxproj".: (TargetId:349)
                    Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
                    Target "_Lib" skipped, due to false condition; ('$(LibCompiled)' == 'true') was evaluated as ('' == 'true').
 00:00:00.000     1>Target "AfterBuildCompileEvent: (TargetId:350)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.510     1>Done building target "AfterBuildCompileEvent" in project "reSAND.vcxproj".: (TargetId:350)
+17:03:57.140     1>Done building target "AfterBuildCompileEvent" in project "reSAND.vcxproj".: (TargetId:350)
 00:00:00.000     1>Target "BuildCompile: (TargetId:351)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.BuildSteps.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.510     1>Done building target "BuildCompile" in project "reSAND.vcxproj".: (TargetId:351)
+17:03:57.140     1>Done building target "BuildCompile" in project "reSAND.vcxproj".: (TargetId:351)
                    Target "SetBuildDefaultEnvironmentVariables" skipped. Previously built successfully.
                    Target "SetUserMacroEnvironmentVariables" skipped, due to false condition; ('@(BuildMacro)' != '') was evaluated as ('' != '').
                    Target "PrepareForBuild" skipped. Previously built successfully.
                    Target "ResolveReferences" skipped. Previously built successfully.
 00:00:00.000     1>Target "BeforeLink: (TargetId:352)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.510     1>Done building target "BeforeLink" in project "reSAND.vcxproj".: (TargetId:352)
+17:03:57.140     1>Done building target "BeforeLink" in project "reSAND.vcxproj".: (TargetId:352)
 00:00:00.000     1>Target "ComputeRCOutputs: (TargetId:353)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.511     1>Done building target "ComputeRCOutputs" in project "reSAND.vcxproj".: (TargetId:353)
+17:03:57.141     1>Done building target "ComputeRCOutputs" in project "reSAND.vcxproj".: (TargetId:353)
 00:00:00.000     1>Target "ComputeRCGeneratedLinkInputs: (TargetId:354)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.511     1>Done building target "ComputeRCGeneratedLinkInputs" in project "reSAND.vcxproj".: (TargetId:354)
+17:03:57.141     1>Done building target "ComputeRCGeneratedLinkInputs" in project "reSAND.vcxproj".: (TargetId:354)
 00:00:00.000     1>Target "ComputeManifestGeneratedLinkerInputs: (TargetId:355)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.511     1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "reSAND.vcxproj".: (TargetId:355)
+17:03:57.141     1>Done building target "ComputeManifestGeneratedLinkerInputs" in project "reSAND.vcxproj".: (TargetId:355)
 00:00:00.000     1>Target "ComputeCustomBuildOutput: (TargetId:356)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "MakeDir" (TaskId:183)
                    Done executing task "MakeDir". (TaskId:183)
-12:34:04.511     1>Done building target "ComputeCustomBuildOutput" in project "reSAND.vcxproj".: (TargetId:356)
+17:03:57.141     1>Done building target "ComputeCustomBuildOutput" in project "reSAND.vcxproj".: (TargetId:356)
                    Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
                    Target "ComputeCLInputPDBName" skipped. Previously built successfully.
                    Target "ComputeReferenceCLInput" skipped, due to false condition; (('@(ProjectReference)'!='' or '@(Reference)'!='')) was evaluated as ((''!='' or ''!='')).
 00:00:00.000     1>Target "ComputeCLOutputs: (TargetId:357)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.511     1>Done building target "ComputeCLOutputs" in project "reSAND.vcxproj".: (TargetId:357)
+17:03:57.141     1>Done building target "ComputeCLOutputs" in project "reSAND.vcxproj".: (TargetId:357)
 00:00:00.000     1>Target "ComputeCLGeneratedLinkInputs: (TargetId:358)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.511     1>Done building target "ComputeCLGeneratedLinkInputs" in project "reSAND.vcxproj".: (TargetId:358)
+17:03:57.141     1>Done building target "ComputeCLGeneratedLinkInputs" in project "reSAND.vcxproj".: (TargetId:358)
 00:00:00.000     1>Target "ComputeLinkInputsFromProject: (TargetId:359)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.511     1>Done building target "ComputeLinkInputsFromProject" in project "reSAND.vcxproj".: (TargetId:359)
+17:03:57.142     1>Done building target "ComputeLinkInputsFromProject" in project "reSAND.vcxproj".: (TargetId:359)
                    Target "ComputeReferenceLinkInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
                    Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
 00:00:00.000     1>Target "AssignTargetPaths: (TargetId:360)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
@@ -1139,8 +1142,8 @@ XSI_VERSION = 5.1
                    Done executing task "AssignTargetPath". (TaskId:186)
                    Task "AssignTargetPath" (TaskId:187)
                    Done executing task "AssignTargetPath". (TaskId:187)
-                   Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
-12:34:04.511     1>Done building target "AssignTargetPaths" in project "reSAND.vcxproj".: (TargetId:360)
+                   Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and '.fx'=='.manifest').
+17:03:57.142     1>Done building target "AssignTargetPaths" in project "reSAND.vcxproj".: (TargetId:360)
                    Target "AssignTargetPaths" skipped. Previously built successfully.
 00:00:00.000     1>Target "SplitResourcesByCulture: (TargetId:361)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
@@ -1149,132 +1152,140 @@ XSI_VERSION = 5.1
                    Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
                    Task "AssignCulture" (TaskId:188)
                    Done executing task "AssignCulture". (TaskId:188)
-12:34:04.512     1>Done building target "SplitResourcesByCulture" in project "reSAND.vcxproj".: (TargetId:361)
+17:03:57.143     1>Done building target "SplitResourcesByCulture" in project "reSAND.vcxproj".: (TargetId:361)
                    Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
 00:00:00.000     1>Target "CreateCustomManifestResourceNames: (TargetId:362)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.512     1>Done building target "CreateCustomManifestResourceNames" in project "reSAND.vcxproj".: (TargetId:362)
+17:03:57.143     1>Done building target "CreateCustomManifestResourceNames" in project "reSAND.vcxproj".: (TargetId:362)
 00:00:00.000     1>Target "PrepareResourceNames: (TargetId:363)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.512     1>Done building target "PrepareResourceNames" in project "reSAND.vcxproj".: (TargetId:363)
+17:03:57.143     1>Done building target "PrepareResourceNames" in project "reSAND.vcxproj".: (TargetId:363)
 00:00:00.000     1>Target "MakeDirsForLink: (TargetId:364)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "MakeDir" (TaskId:189)
                    Done executing task "MakeDir". (TaskId:189)
-12:34:04.512     1>Done building target "MakeDirsForLink" in project "reSAND.vcxproj".: (TargetId:364)
+17:03:57.143     1>Done building target "MakeDirsForLink" in project "reSAND.vcxproj".: (TargetId:364)
 00:00:00.000     1>Target "DoLinkOutputFilesMatch: (TargetId:365)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "VCMessage" skipped, due to false condition; ('%(_OutputFileFromLink.FullPath)' != '$(TargetPath)') was evaluated as ('C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.exe' != 'C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.exe').
                    Task "VCMessage" skipped, due to false condition; ('%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('.exe' != '.exe').
                    Task "VCMessage" skipped, due to false condition; ('%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('reSAND' != 'reSAND').
-12:34:04.512     1>Done building target "DoLinkOutputFilesMatch" in project "reSAND.vcxproj".: (TargetId:365)
+17:03:57.144     1>Done building target "DoLinkOutputFilesMatch" in project "reSAND.vcxproj".: (TargetId:365)
 00:00:00.000     1>Target "PreLinkEvent: (TargetId:366)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
                    Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
-12:34:04.513     1>Done building target "PreLinkEvent" in project "reSAND.vcxproj".: (TargetId:366)
+17:03:57.144     1>Done building target "PreLinkEvent" in project "reSAND.vcxproj".: (TargetId:366)
 00:00:00.000     1>Target "Link: (TargetId:367)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\Microsoft.Cpp.Win32.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Using "Link" task from assembly "Microsoft.Build.CppTasks.Win32, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "Link" (TaskId:190)
-                     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\reSAND.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.lib" /MACHINE:X86 Debug\reSAND.obj
+                     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.exe" /INCREMENTAL /NOLOGO d3d10.lib d3dx10.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\reSAND.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.lib" /MACHINE:X86 Debug\dxManager.obj
+                     Debug\reSAND.obj
+                     Debug\sandManager.obj
                      Debug\reSAND.exe.embed.manifest.res (TaskId:190)
                      Tracking command: (TaskId:190)
-                     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\Tracker.exe /a /i "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\Debug" /r "C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND.EXE.EMBED.MANIFEST.RES|C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND.OBJ" /b MSBuildConsole_CancelEvent382514cfdc8c4ff5a3060f4e53e5e136  /c "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\reSAND.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.lib" /MACHINE:X86 Debug\reSAND.obj
+                     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\Tracker.exe /a /i "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\Debug" /r "C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\DXMANAGER.OBJ|C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND.EXE.EMBED.MANIFEST.RES|C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND.OBJ|C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\SANDMANAGER.OBJ" /b MSBuildConsole_CancelEvent402e3f46c43246639516d492b5784185  /c "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.exe" /INCREMENTAL /NOLOGO d3d10.lib d3dx10.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\reSAND.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.lib" /MACHINE:X86 Debug\dxManager.obj
+                     Debug\reSAND.obj
+                     Debug\sandManager.obj
                      Debug\reSAND.exe.embed.manifest.res (TaskId:190)
                    Done executing task "Link". (TaskId:190)
                    Task "Message" skipped, due to false condition; ('$(EmbedManifestBy)' != 'LINK') was evaluated as ('LINK' != 'LINK').
-12:34:04.816     1>Done building target "Link" in project "reSAND.vcxproj".: (TargetId:367)
+17:03:57.609     1>Done building target "Link" in project "reSAND.vcxproj".: (TargetId:367)
 00:00:00.000     1>Target "_DetermineManagedStateForLink: (TargetId:368)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.816     1>Done building target "_DetermineManagedStateForLink" in project "reSAND.vcxproj".: (TargetId:368)
+17:03:57.609     1>Done building target "_DetermineManagedStateForLink" in project "reSAND.vcxproj".: (TargetId:368)
 00:00:00.000     1>Target "ComputeLinkImportLibraryOutputsForClean: (TargetId:369)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "WriteLinesToFile" skipped, due to false condition; ('@(_LinkImportLibrary)' != '') was evaluated as ('' != '').
-12:34:04.816     1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "reSAND.vcxproj".: (TargetId:369)
+17:03:57.609     1>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "reSAND.vcxproj".: (TargetId:369)
 00:00:00.000     1>Target "AfterLink: (TargetId:370)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.816     1>Done building target "AfterLink" in project "reSAND.vcxproj".: (TargetId:370)
+17:03:57.609     1>Done building target "AfterLink" in project "reSAND.vcxproj".: (TargetId:370)
 00:00:00.000     1>Target "_Link: (TargetId:371)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.816     1>Done building target "_Link" in project "reSAND.vcxproj".: (TargetId:371)
+17:03:57.609     1>Done building target "_Link" in project "reSAND.vcxproj".: (TargetId:371)
 00:00:00.000     1>Target "_ALink: (TargetId:372)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.816     1>Done building target "_ALink" in project "reSAND.vcxproj".: (TargetId:372)
+17:03:57.609     1>Done building target "_ALink" in project "reSAND.vcxproj".: (TargetId:372)
 00:00:00.000     1>Target "ComputeManifestInputsTargets: (TargetId:373)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:04.816     1>Done building target "ComputeManifestInputsTargets" in project "reSAND.vcxproj".: (TargetId:373)
+17:03:57.609     1>Done building target "ComputeManifestInputsTargets" in project "reSAND.vcxproj".: (TargetId:373)
 00:00:00.000     1>Target "MakeDirsForManifest: (TargetId:374)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "MakeDir" (TaskId:191)
                    Done executing task "MakeDir". (TaskId:191)
-12:34:04.816     1>Done building target "MakeDirsForManifest" in project "reSAND.vcxproj".: (TargetId:374)
+17:03:57.610     1>Done building target "MakeDirsForManifest" in project "reSAND.vcxproj".: (TargetId:374)
 00:00:00.000     1>Target "Manifest: (TargetId:375)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Using "Mt" task from assembly "Microsoft.Build.CppTasks.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
                    Task "Mt" (TaskId:192)
                      C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\reSAND.exe.embed.manifest" /manifest Debug\reSAND.exe.intermediate.manifest (TaskId:192)
                      Tracking command: (TaskId:192)
-                     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\Tracker.exe /i "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\Debug" /r "C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND.EXE.INTERMEDIATE.MANIFEST" /b MSBuildConsole_CancelEventa332d1da3a55449685fbccdf2b43b2a4  /c "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe"  /nologo /verbose /out:"Debug\reSAND.exe.embed.manifest" /manifest Debug\reSAND.exe.intermediate.manifest (TaskId:192)
+                     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\Tracker.exe /i "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\Debug" /r "C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND.EXE.INTERMEDIATE.MANIFEST" /b MSBuildConsole_CancelEventa82a2df60a7546869daf71eb297ef45d  /c "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe"  /nologo /verbose /out:"Debug\reSAND.exe.embed.manifest" /manifest Debug\reSAND.exe.intermediate.manifest (TaskId:192)
                    Done executing task "Mt". (TaskId:192)
                    Task "RC" (TaskId:193)
                      C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\reSAND.exe.embed.manifest.res" Debug\reSAND_manifest.rc  (TaskId:193)
                      Tracking command: (TaskId:193)
-                     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\Tracker.exe /i "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\Debug" /r "C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND_MANIFEST.RC" /b MSBuildConsole_CancelEventc263f45d7d1a4012bcd5bd4b11222f84  /c "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe"  /nologo /fo"Debug\reSAND.exe.embed.manifest.res" Debug\reSAND_manifest.rc  (TaskId:193)
+                     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\Tracker.exe /i "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\Debug" /r "C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND_MANIFEST.RC" /b MSBuildConsole_CancelEvent31b1cf44b15e4741bf9cb23a6a1723c9  /c "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe"  /nologo /fo"Debug\reSAND.exe.embed.manifest.res" Debug\reSAND_manifest.rc  (TaskId:193)
                    Done executing task "RC". (TaskId:193)
-12:34:04.880     1>Done building target "Manifest" in project "reSAND.vcxproj".: (TargetId:375)
+17:03:59.532     1>Done building target "Manifest" in project "reSAND.vcxproj".: (TargetId:375)
                    Target "ComputeManifestGeneratedLinkerInputs" skipped. Previously built successfully.
 00:00:00.000     1>Target "LinkEmbedManifest: (TargetId:376)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\Microsoft.Cpp.Win32.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Link" (TaskId:194)
-                     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\reSAND.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.lib" /MACHINE:X86 Debug\reSAND.obj
+                     C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.exe" /INCREMENTAL /NOLOGO d3d10.lib d3dx10.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\reSAND.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.lib" /MACHINE:X86 Debug\dxManager.obj
+                     Debug\reSAND.obj
+                     Debug\sandManager.obj
                      Debug\reSAND.exe.embed.manifest.res (TaskId:194)
                      Tracking command: (TaskId:194)
-                     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\Tracker.exe /a /i "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\Debug" /r "C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND.EXE.EMBED.MANIFEST.RES|C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND.OBJ" /b MSBuildConsole_CancelEvent69d440c9df294e51b116bfcdd5b9309e  /c "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\reSAND.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.lib" /MACHINE:X86 Debug\reSAND.obj
+                     C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\Tracker.exe /a /i "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\Debug" /r "C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\DXMANAGER.OBJ|C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND.EXE.EMBED.MANIFEST.RES|C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\RESAND.OBJ|C:\SERVER\ERWIN\DOCUMENTS\VISUAL STUDIO 2010\PROJECTS\RESAND\RESAND\DEBUG\SANDMANAGER.OBJ" /b MSBuildConsole_CancelEventf2897ef4345b4bfc8554dcdf906e67e6  /c "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.exe" /INCREMENTAL /NOLOGO d3d10.lib d3dx10.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\reSAND.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.lib" /MACHINE:X86 Debug\dxManager.obj
+                     Debug\reSAND.obj
+                     Debug\sandManager.obj
                      Debug\reSAND.exe.embed.manifest.res (TaskId:194)
                    Done executing task "Link". (TaskId:194)
                    Task "Message" (TaskId:195)
                      reSAND.vcxproj -> C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\Debug\reSAND.exe (TaskId:195)
                    Done executing task "Message". (TaskId:195)
-12:34:05.245     1>Done building target "LinkEmbedManifest" in project "reSAND.vcxproj".: (TargetId:376)
+17:03:59.799     1>Done building target "LinkEmbedManifest" in project "reSAND.vcxproj".: (TargetId:376)
 00:00:00.000     1>Target "RegisterOutput: (TargetId:377)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'!='true').
                    Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'=='true').
                    Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'!='true').
                    Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'=='true').
                    Task "VCMessage" skipped, due to false condition; ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0') was evaluated as ('' != '' and '' != '0').
-12:34:05.245     1>Done building target "RegisterOutput" in project "reSAND.vcxproj".: (TargetId:377)
+17:03:59.799     1>Done building target "RegisterOutput" in project "reSAND.vcxproj".: (TargetId:377)
 00:00:00.000     1>Target "_Manifest: (TargetId:378)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.245     1>Done building target "_Manifest" in project "reSAND.vcxproj".: (TargetId:378)
+17:03:59.799     1>Done building target "_Manifest" in project "reSAND.vcxproj".: (TargetId:378)
 00:00:00.000     1>Target "ComputeCLCompileGeneratedXDCFiles: (TargetId:379)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.245     1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "reSAND.vcxproj".: (TargetId:379)
+17:03:59.799     1>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "reSAND.vcxproj".: (TargetId:379)
 00:00:00.000     1>Target "MakeDirsForXdcMake: (TargetId:380)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "MakeDir" (TaskId:196)
                    Done executing task "MakeDir". (TaskId:196)
-12:34:05.245     1>Done building target "MakeDirsForXdcMake" in project "reSAND.vcxproj".: (TargetId:380)
+17:03:59.800     1>Done building target "MakeDirsForXdcMake" in project "reSAND.vcxproj".: (TargetId:380)
                    Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
 00:00:00.000     1>Target "_XdcMake: (TargetId:381)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.245     1>Done building target "_XdcMake" in project "reSAND.vcxproj".: (TargetId:381)
+17:03:59.800     1>Done building target "_XdcMake" in project "reSAND.vcxproj".: (TargetId:381)
 00:00:00.000     1>Target "ComputeCLCompileGeneratedSbrFiles: (TargetId:382)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.245     1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "reSAND.vcxproj".: (TargetId:382)
+17:03:59.800     1>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "reSAND.vcxproj".: (TargetId:382)
 00:00:00.000     1>Target "MakeDirsForBscMake: (TargetId:383)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "MakeDir" (TaskId:197)
                    Done executing task "MakeDir". (TaskId:197)
-12:34:05.245     1>Done building target "MakeDirsForBscMake" in project "reSAND.vcxproj".: (TargetId:383)
+17:03:59.800     1>Done building target "MakeDirsForBscMake" in project "reSAND.vcxproj".: (TargetId:383)
                    Target "BscMake" skipped, due to false condition; ('@(BscMake)' != '') was evaluated as ('' != '').
                    Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
 00:00:00.000     1>Target "_BscMake: (TargetId:384)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.245     1>Done building target "_BscMake" in project "reSAND.vcxproj".: (TargetId:384)
+17:03:59.800     1>Done building target "_BscMake" in project "reSAND.vcxproj".: (TargetId:384)
                    Target "RunCodeAnalysis" skipped, due to false condition; ('$(RunCodeAnalysis)'=='true' or '$(RunCodeAnalysisOnce)'=='true') was evaluated as (''=='true' or ''=='true').
 00:00:00.000     1>Target "_Appverifier: (TargetId:385)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.245     1>Done building target "_Appverifier" in project "reSAND.vcxproj".: (TargetId:385)
+17:03:59.800     1>Done building target "_Appverifier" in project "reSAND.vcxproj".: (TargetId:385)
 00:00:00.000     1>Target "_Deploy: (TargetId:386)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.245     1>Done building target "_Deploy" in project "reSAND.vcxproj".: (TargetId:386)
+17:03:59.800     1>Done building target "_Deploy" in project "reSAND.vcxproj".: (TargetId:386)
                    Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
 00:00:00.000     1>Target "_CopyFilesMarkedCopyLocal: (TargetId:387)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Copy" (TaskId:198)
                    Done executing task "Copy". (TaskId:198)
-12:34:05.246     1>Done building target "_CopyFilesMarkedCopyLocal" in project "reSAND.vcxproj".: (TargetId:387)
+17:03:59.800     1>Done building target "_CopyFilesMarkedCopyLocal" in project "reSAND.vcxproj".: (TargetId:387)
                    Target "AssignTargetPaths" skipped. Previously built successfully.
                    Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
 00:00:00.000     1>Target "GetCopyToOutputDirectoryItems: (TargetId:388)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false').
                    Task "AssignTargetPath" (TaskId:199)
                    Done executing task "AssignTargetPath". (TaskId:199)
-12:34:05.246     1>Done building target "GetCopyToOutputDirectoryItems" in project "reSAND.vcxproj".: (TargetId:388)
+17:03:59.801     1>Done building target "GetCopyToOutputDirectoryItems" in project "reSAND.vcxproj".: (TargetId:388)
                    Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
                    Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
 00:00:00.000     1>Target "_CopySourceItemsToOutputDirectory: (TargetId:389)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.246     1>Done building target "_CopySourceItemsToOutputDirectory" in project "reSAND.vcxproj".: (TargetId:389)
+17:03:59.801     1>Done building target "_CopySourceItemsToOutputDirectory" in project "reSAND.vcxproj".: (TargetId:389)
                    Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
                    Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
 00:00:00.000     1>Target "_CheckForCompileOutputs: (TargetId:390)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.246     1>Done building target "_CheckForCompileOutputs" in project "reSAND.vcxproj".: (TargetId:390)
+17:03:59.801     1>Done building target "_CheckForCompileOutputs" in project "reSAND.vcxproj".: (TargetId:390)
                    Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
 00:00:00.000     1>Target "CopyFilesToOutputDirectory: (TargetId:391)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Copy" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('true' == 'true' and 'true' != 'true').
@@ -1288,14 +1299,14 @@ XSI_VERSION = 5.1
                    Done executing task "Copy". (TaskId:201)
                    Task "Copy" (TaskId:202)
                    Done executing task "Copy". (TaskId:202)
-12:34:05.247     1>Done building target "CopyFilesToOutputDirectory" in project "reSAND.vcxproj".: (TargetId:391)
+17:03:59.802     1>Done building target "CopyFilesToOutputDirectory" in project "reSAND.vcxproj".: (TargetId:391)
                    Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
 00:00:00.000     1>Target "PostBuildEvent: (TargetId:392)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
                    Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
-12:34:05.247     1>Done building target "PostBuildEvent" in project "reSAND.vcxproj".: (TargetId:392)
+17:03:59.802     1>Done building target "PostBuildEvent" in project "reSAND.vcxproj".: (TargetId:392)
 00:00:00.000     1>Target "BuildLink: (TargetId:393)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.BuildSteps.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.247     1>Done building target "BuildLink" in project "reSAND.vcxproj".: (TargetId:393)
+17:03:59.802     1>Done building target "BuildLink" in project "reSAND.vcxproj".: (TargetId:393)
 00:00:00.000     1>Target "_AfterBuild: (TargetId:394)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.BuildSteps.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
                    Task "Delete" (TaskId:203)
                      Deleting file "Debug\reSAND.unsuccessfulbuild". (TaskId:203)
@@ -1303,140 +1314,140 @@ XSI_VERSION = 5.1
                    Task "Touch" (TaskId:204)
                      Touching "Debug\reSAND.lastbuildstate". (TaskId:204)
                    Done executing task "Touch". (TaskId:204)
-12:34:05.248     1>Done building target "_AfterBuild" in project "reSAND.vcxproj".: (TargetId:394)
+17:03:59.804     1>Done building target "_AfterBuild" in project "reSAND.vcxproj".: (TargetId:394)
 00:00:00.000     1>Target "Build: (TargetId:395)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.BuildSteps.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.248     1>Done building target "Build" in project "reSAND.vcxproj".: (TargetId:395)
+17:03:59.804     1>Done building target "Build" in project "reSAND.vcxproj".: (TargetId:395)
 00:00:00.000     1>Target "AfterRebuild: (TargetId:396)" in file "C:\Windows\Microsoft.NET\Framework\v4.0.21006\Microsoft.Common.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.248     1>Done building target "AfterRebuild" in project "reSAND.vcxproj".: (TargetId:396)
+17:03:59.804     1>Done building target "AfterRebuild" in project "reSAND.vcxproj".: (TargetId:396)
 00:00:00.000     1>Target "Rebuild: (TargetId:397)" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.BuildSteps.Targets" from project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj":
-12:34:05.248     1>Done building target "Rebuild" in project "reSAND.vcxproj".: (TargetId:397)
-12:34:05.248     1>Done Building Project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj" (rebuild target(s)).
+17:03:59.804     1>Done building target "Rebuild" in project "reSAND.vcxproj".: (TargetId:397)
+17:03:59.804     1>Done Building Project "C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj" (rebuild target(s)).
 
 Project Performance Summary:
-     1623 ms  C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj   1 calls
-               1623 ms  rebuild                                    1 calls
+     5795 ms  C:\Server\erwin\Documents\Visual Studio 2010\Projects\reSAND\reSAND\reSAND.vcxproj   1 calls
+               5795 ms  rebuild                                    1 calls
 
 Target Performance Summary:
-        0 ms  DoLinkOutputFilesMatch                     1 calls
-        0 ms  CleanReferencedProjects                    1 calls
         0 ms  MakeDirsForLink                            1 calls
-        0 ms  _CopyFilesMarkedCopyLocal                  1 calls
+        0 ms  CleanReferencedProjects                    1 calls
         0 ms  _Midl                                      1 calls
-        0 ms  ComputeCLGeneratedLinkInputs               1 calls
-        0 ms  ComputeCLOutputs                           1 calls
-        0 ms  AfterClCompile                             1 calls
-        0 ms  ResolveReferences                          1 calls
-        0 ms  _CheckForCompileOutputs                    1 calls
-        0 ms  SelectClCompile                            1 calls
-        0 ms  GetCopyToOutputDirectoryItems              1 calls
-        0 ms  AfterBuildCompileEvent                     1 calls
-        0 ms  BeforeResourceCompile                      1 calls
-        0 ms  ComputeCLCompileGeneratedXDCFiles          1 calls
-        0 ms  AfterMidl                                  1 calls
-        0 ms  PrepareResourceNames                       1 calls
-        0 ms  _ClCompile                                 1 calls
         0 ms  SelectCustomBuild                          1 calls
+        0 ms  _CopyFilesMarkedCopyLocal                  1 calls
+        0 ms  ResolveReferences                          1 calls
+        0 ms  ComputeCLOutputs                           1 calls
+        0 ms  SelectClCompile                            1 calls
+        0 ms  ComputeCLGeneratedLinkInputs               1 calls
+        0 ms  _CheckForCompileOutputs                    1 calls
+        0 ms  _ClCompile                                 1 calls
+        0 ms  AfterMidl                                  1 calls
+        0 ms  ComputeMIDLGeneratedCompileInputs          1 calls
+        0 ms  ComputeCLCompileGeneratedXDCFiles          1 calls
+        0 ms  CppClean                                   1 calls
+        0 ms  BeforeClean                                1 calls
+        0 ms  AfterCppClean                              1 calls
         0 ms  CreateCustomManifestResourceNames          1 calls
         0 ms  _Manifest                                  1 calls
-        0 ms  AfterCppClean                              1 calls
-        0 ms  Clean                                      1 calls
-        0 ms  ComputeCustomBuildOutput                   1 calls
+        0 ms  AfterBuildCompileEvent                     1 calls
+        0 ms  PrepareResourceNames                       1 calls
+        0 ms  AfterClCompile                             1 calls
         0 ms  _Xsd                                       1 calls
-        0 ms  BeforeRebuild                              1 calls
-        0 ms  MakeDirsForResourceCompile                 1 calls
+        0 ms  _PrepareForClean                           1 calls
+        0 ms  ComputeCustomBuildOutput                   1 calls
         0 ms  ComputeCLCompileGeneratedSbrFiles          1 calls
-        0 ms  GetFrameworkPaths                          1 calls
-        0 ms  ComputeCLInputPDBName                      1 calls
-        0 ms  ComputeMIDLGeneratedCompileInputs          1 calls
+        0 ms  BeforeRebuild                              1 calls
         0 ms  AfterLink                                  1 calls
-        0 ms  ComputeLinkImportLibraryOutputsForClean    1 calls
+        0 ms  ComputeCLInputPDBName                      1 calls
         0 ms  _DetermineManagedStateFromCL               1 calls
+        0 ms  GetFrameworkPaths                          1 calls
+        0 ms  ComputeLinkImportLibraryOutputsForClean    1 calls
+        0 ms  MakeDirsForResourceCompile                 1 calls
         0 ms  CleanPublishFolder                         1 calls
         0 ms  _XdcMake                                   1 calls
         0 ms  Rebuild                                    1 calls
-        0 ms  MakeDirsForManifest                        1 calls
+        0 ms  Clean                                      1 calls
         0 ms  AfterClean                                 1 calls
-        0 ms  PostBuildEvent                             1 calls
-        0 ms  ComputeLinkInputsFromProject               1 calls
-        0 ms  _ResourceCompile                           1 calls
         0 ms  BeforeCppClean                             1 calls
-        0 ms  _GenerateXMLData                           1 calls
+        0 ms  _ResourceCompile                           1 calls
         0 ms  _DetermineManagedStateForLink              1 calls
-        0 ms  BeforeClean                                1 calls
-        0 ms  MakeDirsForMidl                            1 calls
-        0 ms  PreBuildEvent                              1 calls
-        0 ms  AfterBuildGenerateSources                  1 calls
-        0 ms  AfterRebuild                               1 calls
-        0 ms  RegisterOutput                             1 calls
-        0 ms  _Link                                      1 calls
-        0 ms  _SelectedFiles                             1 calls
-        0 ms  BeforeClCompile                            1 calls
+        0 ms  PostBuildEvent                             1 calls
+        0 ms  _GenerateXMLData                           1 calls
+        0 ms  AssignCppReferenceTargets                  1 calls
+        0 ms  BeforeResolveReferences                    1 calls
         0 ms  AfterResolveReferences                     1 calls
-        0 ms  ComputeManifestGeneratedLinkerInputs       1 calls
-        0 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
-        0 ms  ComputeManifestInputsTargets               1 calls
         0 ms  BuildGenerateSources                       1 calls
-        0 ms  ResolveProjectReferences                   1 calls
+        0 ms  ComputeManifestGeneratedLinkerInputs       1 calls
+        0 ms  _SelectedFiles                             1 calls
+        0 ms  Build                                      1 calls
+        0 ms  ComputeManifestInputsTargets               1 calls
+        0 ms  BeforeClCompile                            1 calls
+        0 ms  AfterBuildGenerateSourcesEvent             1 calls
+        0 ms  AfterBuildGenerateSources                  1 calls
+        0 ms  _BscMake                                   1 calls
+        0 ms  RegisterOutput                             1 calls
+        0 ms  PreLinkEvent                               1 calls
+        0 ms  MakeDirsForMidl                            1 calls
+        0 ms  MakeDirsForBscMake                         1 calls
+        0 ms  _Link                                      1 calls
+        0 ms  AfterRebuild                               1 calls
+        0 ms  PreBuildEvent                              1 calls
+        0 ms  _ALink                                     1 calls
+        0 ms  _Deploy                                    1 calls
+        0 ms  BuildLink                                  1 calls
+        0 ms  CopyFilesToOutputDirectory                 1 calls
+        0 ms  BeforeLink                                 1 calls
+        0 ms  BeforeBuildGenerateSources                 1 calls
+        0 ms  AfterResourceCompile                       1 calls
+        0 ms  MakeDirsForXdcMake                         1 calls
+        0 ms  PlatformPrepareForBuild                    1 calls
+        0 ms  BeforeResourceCompile                      1 calls
+        0 ms  _CopySourceItemsToOutputDirectory          1 calls
+        0 ms  ComputeRCGeneratedLinkInputs               1 calls
+        0 ms  _GenerateWebServiceProxy                   1 calls
+        0 ms  _Appverifier                               1 calls
+        0 ms  BuildCompile                               1 calls
         0 ms  AssignTargetPaths                          1 calls
         0 ms  _SplitProjectReferencesByFileExistence     1 calls
-        0 ms  MakeDirsForBscMake                         1 calls
-        0 ms  _Deploy                                    1 calls
-        0 ms  Build                                      1 calls
-        0 ms  AfterResourceCompile                       1 calls
-        0 ms  _BscMake                                   1 calls
-        0 ms  _ALink                                     1 calls
-        0 ms  BuildCompile                               1 calls
-        0 ms  BeforeBuildGenerateSources                 1 calls
-        0 ms  ComputeRCGeneratedLinkInputs               1 calls
         0 ms  _PrepareForRebuild                         1 calls
-        0 ms  BuildLink                                  1 calls
-        0 ms  BeforeLink                                 1 calls
-        0 ms  PlatformPrepareForBuild                    1 calls
-        0 ms  MakeDirsForXdcMake                         1 calls
-        0 ms  _Appverifier                               1 calls
-        0 ms  AfterBuildGenerateSourcesEvent             1 calls
-        0 ms  CppClean                                   1 calls
-        0 ms  BeforeResolveReferences                    1 calls
-        0 ms  _GenerateWebServiceProxy                   1 calls
-        0 ms  AssignCppReferenceTargets                  1 calls
-        0 ms  _CopySourceItemsToOutputDirectory          1 calls
-        1 ms  _PrepareForClean                           1 calls
-        1 ms  PreLinkEvent                               1 calls
-        1 ms  _AfterBuild                                1 calls
+        1 ms  CoreClean                                  1 calls
+        1 ms  ResolveProjectReferences                   1 calls
+        1 ms  ComputeRCOutputs                           1 calls
+        1 ms  MakeDirsForManifest                        1 calls
+        1 ms  DoLinkOutputFilesMatch                     1 calls
+        1 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
+        1 ms  SplitResourcesByCulture                    1 calls
         1 ms  MakeDirsForCl                              1 calls
         1 ms  PrepareForBuild                            1 calls
-        1 ms  CopyFilesToOutputDirectory                 1 calls
-        1 ms  ComputeRCOutputs                           1 calls
-        1 ms  CoreClean                                  1 calls
-        1 ms  SplitResourcesByCulture                    1 calls
+        1 ms  GetCopyToOutputDirectoryItems              1 calls
+        1 ms  ComputeLinkInputsFromProject               1 calls
         2 ms  _PrepareForBuild                           1 calls
-        3 ms  SetBuildDefaultEnvironmentVariables        1 calls
-       16 ms  CoreCppClean                               1 calls
-       31 ms  ManifestResourceCompile                    1 calls
-       64 ms  Manifest                                   1 calls
-      303 ms  Link                                       1 calls
-      364 ms  LinkEmbedManifest                          1 calls
-      830 ms  ClCompile                                  1 calls
+        2 ms  _AfterBuild                                1 calls
+        2 ms  SetBuildDefaultEnvironmentVariables        1 calls
+       18 ms  CoreCppClean                               1 calls
+      268 ms  LinkEmbedManifest                          1 calls
+      365 ms  ManifestResourceCompile                    1 calls
+      465 ms  Link                                       1 calls
+     1922 ms  Manifest                                   1 calls
+     2738 ms  ClCompile                                  1 calls
 
 Task Performance Summary:
-        0 ms  MakeDir                                   12 calls
         0 ms  FindUnderPath                              2 calls
-        0 ms  ReadLinesFromFile                          2 calls
+        0 ms  Copy                                       4 calls
         0 ms  AssignTargetPath                           5 calls
-        0 ms  RemoveDuplicates                           1 calls
         0 ms  AssignCulture                              1 calls
-        0 ms  Message                                    3 calls
-        1 ms  Delete                                     5 calls
-        1 ms  Copy                                       4 calls
+        0 ms  Delete                                     5 calls
+        0 ms  RemoveDuplicates                           1 calls
+        1 ms  ReadLinesFromFile                          2 calls
+        1 ms  Message                                    3 calls
+        1 ms  SetEnv                                     4 calls
+        1 ms  MakeDir                                   12 calls
         2 ms  Touch                                      2 calls
-        2 ms  SetEnv                                     4 calls
-        2 ms  WriteLinesToFile                           5 calls
-       14 ms  CppClean                                   1 calls
-       34 ms  Mt                                         1 calls
-       61 ms  RC                                         2 calls
-      666 ms  Link                                       2 calls
-      830 ms  CL                                         1 calls
+        3 ms  WriteLinesToFile                           5 calls
+       17 ms  CppClean                                   1 calls
+      730 ms  Link                                       2 calls
+      789 ms  Mt                                         1 calls
+     1495 ms  RC                                         2 calls
+     2737 ms  CL                                         1 calls
 
 Build succeeded.
 
-Time Elapsed 00:00:01.62
+Time Elapsed 00:00:05.79

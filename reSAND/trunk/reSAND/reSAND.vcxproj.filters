@@ -21,9 +21,15 @@
     <ClCompile Include="reSAND.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sandManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dxManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sandManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

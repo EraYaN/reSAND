@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 #include "dxManager.h"
+#include "sandManager.h"
 
 /*******************************************************************
 * Global Variables
@@ -13,6 +14,7 @@ int windowHeight = 600;
 
 //directX manager
 dxManager dx;
+sandManager sand;
 
 /*******************************************************************
 * Main Window Procedure - handles application events
@@ -56,7 +58,7 @@ bool initWindow(HWND &hWnd, HINSTANCE hInstance, int width, int height)
 	wcex.hCursor		= LoadCursor(NULL, IDC_ARROW);
 	wcex.hbrBackground	= (HBRUSH)(COLOR_WINDOW+1);
 	wcex.lpszMenuName	= NULL;
-	wcex.lpszClassName	= TEXT("DXTutorial1");
+	wcex.lpszClassName	= TEXT("reSAND");
 	wcex.hIconSm		= 0;
 	RegisterClassEx(&wcex);
 
@@ -67,7 +69,7 @@ bool initWindow(HWND &hWnd, HINSTANCE hInstance, int width, int height)
 	//create the window from the class above
 	//disable resizing and correct for extra width and height
 	hWnd = CreateWindow( "reSAND", 
-						 "reSAND -  by Erwin de Haan"
+						 "reSAND -  by Erwin de Haan",
 						 WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX,
 						 CW_USEDEFAULT, 
 						 CW_USEDEFAULT, 
