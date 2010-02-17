@@ -65,7 +65,7 @@ public:
 
 	//renderScene
 	void renderScene();	
-	void renderScene(vertex* &iV, UINT numVertices);	
+	void renderScene(vertex* iV, UINT numVertices);	
 
 private:
 
