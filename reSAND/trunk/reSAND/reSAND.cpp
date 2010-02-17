@@ -14,7 +14,7 @@ int windowHeight = 600;
 
 //directX manager
 dxManager dx;
-sandManager sand;
+sandManager sandM;
 
 /*******************************************************************
 * Main Window Procedure - handles application events
@@ -109,8 +109,8 @@ int APIENTRY _tWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpC
             TranslateMessage(&msg);
             DispatchMessage(&msg);			
 		}	
-	
-		dx.renderScene();
+		UINT numV = 0;
+		dx.renderScene(sandM.sand2vertex(numV), numV);
     }
 
 	return (int) msg.wParam;
