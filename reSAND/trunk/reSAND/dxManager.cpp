@@ -67,21 +67,74 @@ bool dxManager::initialize( HWND* hW )
 													&pSwapChain, 
 													&pD3DDevice ) ) ) return fatalError("D3D device creation failed");
 
-	//Create render target view
+	//SHADER STAGE
+	//*****************************************************************************
+		
+	//Load Basic Effect and Technique 
 	//--------------------------------------------------------------
+	if ( FAILED( D3DX10CreateEffectFromFile(	"effects/basicEffect.fx", 
+												NULL, NULL, 
+												"fx_4_0", 
+												D3D10_SHADER_ENABLE_STRICTNESS, 
+												0, 
+												pD3DDevice, 
+												NULL, 
+												NULL, 
+												&pBasicEffect, 
+												NULL, 
+												NULL	) ) ) return fatalError("Could not load effect file!");	
+
+	pBasicTechnique = pBasicEffect->GetTechniqueByName("Render");
 	
-	//try to get the back buffer
-	ID3D10Texture2D* pBackBuffer;	
-	if ( FAILED( pSwapChain->GetBuffer(0, __uuidof(ID3D10Texture2D), (LPVOID*) &pBackBuffer) ) ) return fatalError("Could not get back buffer");
+	//create matrix effect pointers
+	pViewMatrixEffectVariable = pBasicEffect->GetVariableByName( "View" )->AsMatrix();
+	pProjectionMatrixEffectVariable = pBasicEffect->GetVariableByName( "Projection" )->AsMatrix();
+	pWorldMatrixEffectVariable = pBasicEffect->GetVariableByName( "World" )->AsMatrix();
 
-	//try to create render target view
-	if ( FAILED( pD3DDevice->CreateRenderTargetView(pBackBuffer, NULL, &pRenderTargetView) ) ) return fatalError("Could not create render target view");
+	//INPUT ASSEMBLY STAGE
+	//*****************************************************************************
+	
+	//Create Input Layout
+	//--------------------------------------------------------------	
+	
+	D3D10_INPUT_ELEMENT_DESC layout[] = 
+	{	
+		{ "POSITION", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D10_INPUT_PER_VERTEX_DATA, 0 },
+		{ "COLOR", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0, 12, D3D10_INPUT_PER_VERTEX_DATA, 0 }
+	};
+	UINT numElements = 2;
 
-	//release the back buffer
-	pBackBuffer->Release();
+	D3D10_PASS_DESC PassDesc;
+	pBasicTechnique->GetPassByIndex( 0 )->GetDesc( &PassDesc );
+	if ( FAILED( pD3DDevice->CreateInputLayout( layout, 
+												numElements, 
+												PassDesc.pIAInputSignature,
+												PassDesc.IAInputSignatureSize, 
+												&pVertexLayout ) ) ) return fatalError("Could not create Input Layout!");
 
-	//set the render target
-	pD3DDevice->OMSetRenderTargets(1, &pRenderTargetView, NULL);
+	// Set the input layout
+	pD3DDevice->IASetInputLayout( pVertexLayout );
+
+	//create vertex buffer (space for 100 vertices)
+	//---------------------------------------------------------------------------------
+	UINT numVertices = 100;
+
+	D3D10_BUFFER_DESC bd;
+	bd.Usage = D3D10_USAGE_DYNAMIC;
+	bd.ByteWidth = sizeof( vertex ) * numVertices;
+	bd.BindFlags = D3D10_BIND_VERTEX_BUFFER;
+	bd.CPUAccessFlags = D3D10_CPU_ACCESS_WRITE;
+	bd.MiscFlags = 0;
+
+	if ( FAILED( pD3DDevice->CreateBuffer( &bd, NULL, &pVertexBuffer ) ) ) return fatalError("Could not create vertex buffer!");;
+
+	// Set vertex buffer
+	UINT stride = sizeof( vertex );
+	UINT offset = 0;
+	pD3DDevice->IASetVertexBuffers( 0, 1, &pVertexBuffer, &stride, &offset );	
+
+	//RASTERIZER STAGE SETUP
+	//*****************************************************************************
 	
 	//Create viewport
 	//--------------------------------------------------------------
@@ -94,19 +147,52 @@ bool dxManager::initialize( HWND* hW )
 	viewPort.TopLeftX = 0;
 	viewPort.TopLeftY = 0;
 
-	//set the viewport
 	pD3DDevice->RSSetViewports(1, &viewPort);
-
-	// Set up the view matrix
+	
+	//set rasterizer state
 	//--------------------------------------------------------------
+	
+	D3D10_RASTERIZER_DESC rasterizerState;
+	rasterizerState.CullMode = D3D10_CULL_NONE;
+	rasterizerState.FillMode = D3D10_FILL_SOLID;
+	rasterizerState.FrontCounterClockwise = true;
+    rasterizerState.DepthBias = false;
+    rasterizerState.DepthBiasClamp = 0;
+    rasterizerState.SlopeScaledDepthBias = 0;
+    rasterizerState.DepthClipEnable = true;
+    rasterizerState.ScissorEnable = false;
+    rasterizerState.MultisampleEnable = false;
+    rasterizerState.AntialiasedLineEnable = true;
+
+	ID3D10RasterizerState* pRS;
+	pD3DDevice->CreateRasterizerState( &rasterizerState, &pRS);
+	
+	pD3DDevice->RSSetState(pRS);
+
+	// OUTPUT-MERGER STAGE
+	//*****************************************************************************
+
+	//Create render target view
+	//--------------------------------------------------------------
+	
+	//try to get the back buffer
+	ID3D10Texture2D* pBackBuffer;	
+	if ( FAILED( pSwapChain->GetBuffer(0, __uuidof(ID3D10Texture2D), (LPVOID*) &pBackBuffer) ) ) return fatalError("Could not get back buffer");
+
+	//try to create render target view
+	if ( FAILED( pD3DDevice->CreateRenderTargetView(pBackBuffer, NULL, &pRenderTargetView) ) ) return fatalError("Could not create render target view");
+	
+	pBackBuffer->Release();
+	pD3DDevice->OMSetRenderTargets(1, &pRenderTargetView, NULL);
+
+	// Set up the view and projection matrices
+	//*****************************************************************************
 	D3DXMatrixLookAtLH(&viewMatrix, new D3DXVECTOR3(0.0f, 0.0f, -5.0f),
 									new D3DXVECTOR3(0.0f, 0.0f, 1.0f),
-									new D3DXVECTOR3(0.0f, 1.0f, 0.0f));
-		
-	//Set up projection matrix
-	//--------------------------------------------------------------
+									new D3DXVECTOR3(0.0f, 1.0f, 0.0f));		
+	
     D3DXMatrixPerspectiveFovLH(&projectionMatrix, (float)D3DX_PI * 0.5f, (float)width/(float)height, 0.1f, 100.0f);
-		
+
 	//everything completed successfully
 	return true;
 }
@@ -119,7 +205,46 @@ void dxManager::renderScene()
 	//clear scene
 	pD3DDevice->ClearRenderTargetView( pRenderTargetView, D3DXCOLOR(0,0,0,0) );
 
-	//SCENE RENDERING GOES HERE!!!	
+	//create world matrix
+	static float r;
+	D3DXMATRIX w;
+	D3DXMatrixIdentity(&w);
+	D3DXMatrixRotationY(&w, r);
+	r += 0.001f;
+
+	//set effect matrices
+	pWorldMatrixEffectVariable->SetMatrix(w);
+	pViewMatrixEffectVariable->SetMatrix(viewMatrix);
+	pProjectionMatrixEffectVariable->SetMatrix(projectionMatrix);
+
+	//fill vertex buffer with vertices
+	UINT numVertices = 3;	
+	vertex* v = NULL;	
+
+	//lock vertex buffer for CPU use
+	pVertexBuffer->Map(D3D10_MAP_WRITE_DISCARD, 0, (void**) &v );
+	
+	v[0] = vertex( D3DXVECTOR3(-1,-1,0), D3DXVECTOR4(1,0,0,1) );
+	v[1] = vertex( D3DXVECTOR3(0,1,0), D3DXVECTOR4(0,1,0,1) );
+	v[2] = vertex( D3DXVECTOR3(1,-1,0), D3DXVECTOR4(0,0,1,1) );
+
+	pVertexBuffer->Unmap();
+
+	// Set primitive topology 
+	pD3DDevice->IASetPrimitiveTopology( D3D10_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP );
+
+	//get technique desc
+	D3D10_TECHNIQUE_DESC techDesc;
+	pBasicTechnique->GetDesc( &techDesc );
+	
+	for( UINT p = 0; p < techDesc.Passes; ++p )
+	{
+		//apply technique
+		pBasicTechnique->GetPassByIndex( p )->Apply( 0 );
+				
+		//draw
+		pD3DDevice->Draw( numVertices, 0 );
+	}
 
 	//flip buffers
 	pSwapChain->Present(0,0);

@@ -1,3 +1,13 @@
+/************************************************************************************
+ *	DirectX 10 Manager Class
+ *	----------------------------------------
+ *	code by : bobby anguelov - banguelov@cs.up.ac.za
+ *	downloaded from : takinginitiative.wordpress.org
+ *
+ *	code is free for use in whatever way you want, however if you work for a game
+ *	development firm you are obliged to offer me a job :P (haha i wish)
+ ************************************************************************************/
+
 #ifndef DXMANAGER
 #define DXMANAGER
 
@@ -5,8 +15,18 @@
 #include <d3d10.h>
 #include <d3dx10.h>
 
-#pragma comment( lib, "d3d10.lib" )
-#pragma comment( lib, "d3dx10.lib" )
+//create a basic vertex container
+struct vertex
+{
+	D3DXVECTOR3 pos;
+	D3DXVECTOR4 color;
+
+	vertex( D3DXVECTOR3 p, D3DXVECTOR4 c )
+	{
+		pos = p;
+		color = c;
+	}
+};
 
 class dxManager
 {
@@ -23,6 +43,19 @@ private:
 	IDXGISwapChain*				pSwapChain;
 	ID3D10RenderTargetView*		pRenderTargetView;
 	D3D10_VIEWPORT				viewPort;
+
+	//input layout and vertex buffer
+	ID3D10Buffer*				pVertexBuffer;
+	ID3D10InputLayout*			pVertexLayout;
+
+	//effects and techniques
+	ID3D10Effect*				pBasicEffect;
+	ID3D10EffectTechnique*		pBasicTechnique;
+
+	//effect variable pointers
+	ID3D10EffectMatrixVariable* pViewMatrixEffectVariable;
+	ID3D10EffectMatrixVariable* pProjectionMatrixEffectVariable;
+	ID3D10EffectMatrixVariable* pWorldMatrixEffectVariable;
 	
 	//projection and view matrices
 	D3DXMATRIX                  viewMatrix;
@@ -50,4 +83,3 @@ private:
 };
 
 #endif
-

@@ -67,7 +67,7 @@ bool initWindow(HWND &hWnd, HINSTANCE hInstance, int width, int height)
 	//create the window from the class above
 	//disable resizing and correct for extra width and height
 	hWnd = CreateWindow( "reSAND", 
-						 "reSAND - by Erwin de Haan", 
+						 "reSAND -  by Erwin de Haan"
 						 WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX,
 						 CW_USEDEFAULT, 
 						 CW_USEDEFAULT, 
