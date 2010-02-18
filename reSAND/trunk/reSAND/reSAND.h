@@ -6,8 +6,8 @@
 * Global Variables
 *******************************************************************/
 HWND hWnd;					//window handle
-int windowWidth = 1024;	
-int windowHeight = 768;
+int windowWidth = 1000;	
+int windowHeight = 1000;
 
 //directX manager
 dxManager dx;

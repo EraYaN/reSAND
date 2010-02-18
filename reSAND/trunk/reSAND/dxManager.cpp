@@ -117,7 +117,7 @@ bool dxManager::initialize( HWND* hW )
 
 	//create vertex buffer (space for 100 vertices)
 	//---------------------------------------------------------------------------------
-	UINT numVertices = 100;
+	UINT numVertices = 10000;
 
 	D3D10_BUFFER_DESC bd;
 	bd.Usage = D3D10_USAGE_DYNAMIC;
@@ -187,8 +187,8 @@ bool dxManager::initialize( HWND* hW )
 
 	// Set up the view and projection matrices
 	//*****************************************************************************
-	D3DXMatrixLookAtLH(&viewMatrix, new D3DXVECTOR3(0.0f, 0.0f, -5.0f),
-									new D3DXVECTOR3(0.0f, 0.0f, 1.0f),
+	D3DXMatrixLookAtLH(&viewMatrix, new D3DXVECTOR3(0.0f, 0.0f, -10.0f),
+									new D3DXVECTOR3(0.0f, 0.0f, 0.0f),
 									new D3DXVECTOR3(0.0f, 1.0f, 0.0f));		
 	
     D3DXMatrixPerspectiveFovLH(&projectionMatrix, (float)D3DX_PI * 0.5f, (float)width/(float)height, 0.1f, 100.0f);
@@ -200,7 +200,7 @@ bool dxManager::initialize( HWND* hW )
 /*******************************************************************
 * Scene Renderer
 *******************************************************************/
-void dxManager::renderScene()
+void dxManager::renderScene(UINT numVertices)
 {
 	//clear scene
 	pD3DDevice->ClearRenderTargetView( pRenderTargetView, D3DXCOLOR(0,0,0,0) );
@@ -217,7 +217,7 @@ void dxManager::renderScene()
 	pViewMatrixEffectVariable->SetMatrix(viewMatrix);
 	pProjectionMatrixEffectVariable->SetMatrix(projectionMatrix);
 
-	//fill vertex buffer with vertices
+	/*//fill vertex buffer with vertices
 	UINT numVertices = 0;	
 	vertex* v = NULL;	
 
@@ -234,7 +234,7 @@ void dxManager::renderScene()
 ,1) );
 numVertices++;
 	}
-	pVertexBuffer->Unmap();
+	pVertexBuffer->Unmap();*/
 
 	// Set primitive topology 
 	pD3DDevice->IASetPrimitiveTopology( D3D10_PRIMITIVE_TOPOLOGY_POINTLIST );

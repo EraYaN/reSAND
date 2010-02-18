@@ -70,7 +70,7 @@ public:
 	bool initialize(HWND*);	
 
 	//renderScene
-	void renderScene();	
+	void renderScene(UINT numVertices);	
 	void renderScene(vertex* iV, UINT numVertices);	
 
 
