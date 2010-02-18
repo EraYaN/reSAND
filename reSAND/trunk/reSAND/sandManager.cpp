@@ -6,16 +6,26 @@
 
 sandManager::sandManager(void)
 {
-SAND_TYPE Water = SAND_TYPE(0, 0, 1.0, 0, 1.0);
-SAND exSAND = SAND(0.5,1,0);
-SAND ex2SAND = SAND(0.7,1,0);
+SAND_TYPE Sand = SAND_TYPE(1.0, 0.6, 0.2, 0, 1.0);
+SAND_TYPE Water = SAND_TYPE(0.2, 0.2, 1.0, 0, 1.0);
 SAND_TYPES.push_back(Water);
-SANDS.push_back(exSAND);
-SANDS.push_back(ex2SAND);
+SAND_TYPES.push_back(Sand);
+/*for(int i=0; i<200; ++i){
+	int extra = rand()%2-rand()%-2;
+	int extra2 = rand()%2-rand()%-2;
+	if(extra==0) extra = 1;
+	if(extra==0) extra2 = -1;
+	SANDS.push_back(SAND((float)rand()/(float)RAND_MAX*extra,
+(float)rand()/(float)RAND_MAX*extra2,0)
+);
 
+}*/
+/*for(int i=0; i<10; ++i){
+	SANDS.push_back(SAND(i*0.5,i*0.5,0));
+}*/
 }
 
-vertex* sandManager::sand2vertex(){
+/*vertex* sandManager::sand2vertex(){
 	UINT numVertices = SANDS.size();
 	vertex* iV = new vertex;
 	for (unsigned long index=0; index<numVertices; ++index) {
@@ -29,10 +39,10 @@ vertex* sandManager::sand2vertex(){
 							);		
     }
 	return iV;
-}
-UINT sandManager::getNumberOfSands(void){
+}*/
+/*UINT sandManager::getNumberOfSands(void){
 	return SANDS.size();
-}
+}*/
 
 sandManager::~sandManager(void)
 {

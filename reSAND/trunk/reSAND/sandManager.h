@@ -49,15 +49,14 @@ struct SAND
 
 class sandManager
 {
-private:
-	std::vector<SAND_TYPE> SAND_TYPES;
-	std::vector<SAND> SANDS;
+
 	
 public:
-	
+	std::vector<SAND_TYPE> SAND_TYPES;
+	std::vector<SAND> SANDS;
 	sandManager(void);
-	vertex* sand2vertex(void);
-	UINT getNumberOfSands();
+	//vertex* sand2vertex(void);
+	//UINT getNumberOfSands();
 	~sandManager(void);
 };
 
