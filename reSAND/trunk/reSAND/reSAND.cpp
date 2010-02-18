@@ -92,8 +92,8 @@ int APIENTRY _tWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpC
             TranslateMessage(&msg);
             DispatchMessage(&msg);			
 		}	
-		
-		//dx.renderScene(sandM.sand2vertex(), sandM.getNumberOfSands());
+		vertex* iiV = sandM.sand2vertex();
+		//dx.renderScene(iiV, sandM.getNumberOfSands());
 		dx.renderScene();
 		//dx.renderScene(v, numVertices);
 

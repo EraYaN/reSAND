@@ -1,10 +1,6 @@
 #pragma once
 #include <windows.h>
 #include <tchar.h>
-#include <stdio.h>
-
-
-#include "dxManager.h"
 #include "sandManager.h"
 /*******************************************************************
 * Global Variables

@@ -237,7 +237,7 @@ numVertices++;
 	pVertexBuffer->Unmap();
 
 	// Set primitive topology 
-	pD3DDevice->IASetPrimitiveTopology( D3D10_PRIMITIVE_TOPOLOGY_LINESTRIP );
+	pD3DDevice->IASetPrimitiveTopology( D3D10_PRIMITIVE_TOPOLOGY_POINTLIST );
 
 	//get technique desc
 	D3D10_TECHNIQUE_DESC techDesc;

@@ -6,7 +6,7 @@ i prefix stands for "initial"
 ***************************/
 #include <windows.h>
 #include <vector>
-#include "reSAND.h"
+#include "dxManager.h"
 
 //SAND particle types ex. Water, Stone
 struct SAND_TYPE
