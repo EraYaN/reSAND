@@ -21,7 +21,7 @@ dxManager::~dxManager()
 /*******************************************************************
 * Initializes Direct3D Device
 *******************************************************************/
-bool dxManager::initialize( HWND* hW )
+bool dxManager::initialize( HWND* hW, UINT max_vert )
 {
 	//window handle
 	hWnd = hW;
@@ -117,7 +117,7 @@ bool dxManager::initialize( HWND* hW )
 
 	//create vertex buffer (space for 100 vertices)
 	//---------------------------------------------------------------------------------
-	UINT numVertices = 10000;
+	UINT numVertices = max_vert;
 
 	D3D10_BUFFER_DESC bd;
 	bd.Usage = D3D10_USAGE_DYNAMIC;

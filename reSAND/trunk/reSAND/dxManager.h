@@ -40,8 +40,7 @@ private:
 	ID3D10RenderTargetView*		pRenderTargetView;
 	D3D10_VIEWPORT				viewPort;
 
-	//input layout and vertex buffer
-	
+	//input layout	
 	ID3D10InputLayout*			pVertexLayout;
 
 	//effects and techniques
@@ -57,17 +56,22 @@ private:
 	D3DXMATRIX                  viewMatrix;
 	D3DXMATRIX                  projectionMatrix;
 
+	
+
 	/*******************************************************************
 	* Methods
 	********************************************************************/	
 public:
+	//Font Interface
+	ID3D10XFont *m_font;
+	//Vertex buffer
 	ID3D10Buffer*				pVertexBuffer;
 	//constructor and destructor
 	dxManager();
 	~dxManager();
 
 	//initialize directx device
-	bool initialize(HWND*);	
+	bool initialize(HWND*, UINT max_vert);	
 
 	//renderScene
 	void renderScene(UINT numVertices);	

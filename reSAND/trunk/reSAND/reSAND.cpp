@@ -59,6 +59,12 @@ LRESULT CALLBACK wndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 								// Check if the user hit the escape key
 								case VK_ESCAPE : PostQuitMessage(0);
 								break;
+								case VK_SPACE : brushtype+=1;
+								if(brushtype>=sandM.SAND_TYPES.size()){
+								brushtype = 0;
+								}
+									
+								break;
 							}
 		
         break;	
@@ -70,7 +76,23 @@ LRESULT CALLBACK wndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			int ptx = LOWORD(lParam);
   			 float NX = ptx/((windowWidth/2)-1)/(windowWidth/windowHeight);
  			 float NY = (1-pty)/(windowHeight/2);*/
-			sandM.SANDS.push_back(SAND(NX,NY,0));
+			 float urc_x = NX-(((float)bsize/2)*smallest_unit_x);
+			 float urc_y = NY-(((float)bsize/2)*smallest_unit_y);
+			 float offset_x = 0.0;
+			 float offset_y = 0.0;
+
+			 for(int ispawn = 0; ispawn<(bsize*bsize); ++ispawn){
+			 	
+				offset_x += smallest_unit_x;
+				if(offset_x>bsize*smallest_unit_x){
+					offset_x = 0.0;
+					offset_y += smallest_unit_y;
+				}
+				if(sandM.SANDS.size()<max_sands){
+				sandM.SANDS.push_back(SAND((urc_x+offset_x),(urc_y+offset_y),brushtype));
+				}
+			 }
+			//sandM.SANDS.push_back(SAND(NX,NY,0));
 			//char msg;
 			//sprintf(&msg,"X: %f Y: %f",NX*10,NY*10);
 			//MessageBox(hWnd, (LPCSTR)msg, "Fatal Error!", MB_ICONERROR);
@@ -142,7 +164,7 @@ int APIENTRY _tWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpC
 	if ( !initWindow(hWnd, hInstance, windowWidth, windowHeight)) return 0;
 	
 	//set up directx manager
-	if ( !dx.initialize(&hWnd) ) return 0;
+	if ( !dx.initialize(&hWnd, max_sands) ) return 0;
 	
 	// Main message loop
     MSG msg = {0};
@@ -153,7 +175,7 @@ int APIENTRY _tWinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpC
             TranslateMessage(&msg);
             DispatchMessage(&msg);			
 		}	
-		
+		sandM.calc_phys(smallest_unit_x,smallest_unit_y);
 		//dx.renderScene(sandM.sand2vertex(), sandM.getNumberOfSands());
 		dx.renderScene(writevertexbuffer());
 		//dx.renderScene(v, numVertices);
