@@ -55,6 +55,11 @@ public:
 	std::vector<SAND_TYPE> SAND_TYPES;
 	std::vector<SAND> SANDS;
 	sandManager(void);
+	/*******
+	Physics
+	*******/
+	void calc_phys(float smallest_unit_x, float smallest_unit_y);
+
 	//vertex* sand2vertex(void);
 	//UINT getNumberOfSands();
 	~sandManager(void);
