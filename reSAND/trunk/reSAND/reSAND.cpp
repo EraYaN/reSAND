@@ -64,12 +64,13 @@ LRESULT CALLBACK wndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         break;	
 		case WM_LBUTTONDOWN:
 		if(lParam != NULL){
-		
-			int pty = HIWORD(lParam);
+			float NY = (((float)HIWORD(lParam)-((float)windowHeight/2))/50)*-1;
+			float NX = ((float)LOWORD(lParam)-((float)windowWidth/2))/50;
+			/*int pty = HIWORD(lParam);
 			int ptx = LOWORD(lParam);
   			 float NX = ptx/((windowWidth/2)-1)/(windowWidth/windowHeight);
- 			 float NY = (1-pty)/(windowHeight/2);
-			sandM.SANDS.push_back(SAND(NX*10,NY*10,0));
+ 			 float NY = (1-pty)/(windowHeight/2);*/
+			sandM.SANDS.push_back(SAND(NX,NY,0));
 			//char msg;
 			//sprintf(&msg,"X: %f Y: %f",NX*10,NY*10);
 			//MessageBox(hWnd, (LPCSTR)msg, "Fatal Error!", MB_ICONERROR);
