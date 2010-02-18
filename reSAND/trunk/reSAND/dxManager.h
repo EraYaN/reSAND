@@ -5,6 +5,7 @@
 #include <d3d10.h>
 #include <d3dx10.h>
 
+
 //create a basic vertex container
 struct vertex
 {
@@ -15,6 +16,11 @@ struct vertex
 	{
 		pos = p;
 		color = c;
+	}
+	vertex(void)
+	{
+		pos = D3DXVECTOR3();
+		color = D3DXVECTOR4();
 	}
 };
 
