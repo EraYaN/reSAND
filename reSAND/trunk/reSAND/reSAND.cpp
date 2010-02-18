@@ -64,8 +64,8 @@ LRESULT CALLBACK wndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         break;	
 		case WM_LBUTTONDOWN:
 		if(lParam != NULL){
-			float NY = (((float)HIWORD(lParam)-((float)windowHeight/2))/50)*-1;
-			float NX = ((float)LOWORD(lParam)-((float)windowWidth/2))/50;
+			float NY = (((float)HIWORD(lParam)-((float)windowHeight/2))/((float)windowHeight/20))*-1;
+			float NX = ((float)LOWORD(lParam)-((float)windowWidth/2))/((float)windowHeight/20);
 			/*int pty = HIWORD(lParam);
 			int ptx = LOWORD(lParam);
   			 float NX = ptx/((windowWidth/2)-1)/(windowWidth/windowHeight);
