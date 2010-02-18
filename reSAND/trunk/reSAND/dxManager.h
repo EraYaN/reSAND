@@ -63,7 +63,7 @@ private:
 	********************************************************************/	
 public:
 	//Font Interface
-	ID3D10XFont *m_font;
+	//ID3D10XFont *m_font;
 	//Vertex buffer
 	ID3D10Buffer*				pVertexBuffer;
 	//constructor and destructor
